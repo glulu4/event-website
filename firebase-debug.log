@@ -1,0 +1,379 @@
+[debug] [2024-12-25T01:39:25.487Z] ----------------------------------------------------------------------
+[debug] [2024-12-25T01:39:25.488Z] Command:       /Users/gabriellulu/.nvm/versions/node/v18.20.3/bin/node /Users/gabriellulu/.nvm/versions/node/v18.20.3/bin/firebase deploy
+[debug] [2024-12-25T01:39:25.488Z] CLI Version:   13.27.0
+[debug] [2024-12-25T01:39:25.488Z] Platform:      darwin
+[debug] [2024-12-25T01:39:25.488Z] Node Version:  v18.20.3
+[debug] [2024-12-25T01:39:25.490Z] Time:          Tue Dec 24 2024 20:39:25 GMT-0500 (Eastern Standard Time)
+[debug] [2024-12-25T01:39:25.490Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-12-25T01:39:25.515Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-25T01:39:25.516Z] > authorizing via signed-in user (glulu4444@gmail.com)
+[debug] [2024-12-25T01:39:25.516Z] [iam] checking project gif-to-video-2c4ce for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2024-12-25T01:39:25.516Z] Checked if tokens are valid: true, expires at: 1735094058093
+[debug] [2024-12-25T01:39:25.516Z] Checked if tokens are valid: true, expires at: 1735094058093
+[debug] [2024-12-25T01:39:25.517Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/gif-to-video-2c4ce:testIamPermissions [none]
+[debug] [2024-12-25T01:39:25.517Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/gif-to-video-2c4ce:testIamPermissions x-goog-quota-user=projects/gif-to-video-2c4ce
+[debug] [2024-12-25T01:39:25.517Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/gif-to-video-2c4ce:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2024-12-25T01:39:25.741Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/gif-to-video-2c4ce:testIamPermissions 200
+[debug] [2024-12-25T01:39:25.742Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/gif-to-video-2c4ce:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2024-12-25T01:39:25.742Z] Checked if tokens are valid: true, expires at: 1735094058093
+[debug] [2024-12-25T01:39:25.742Z] Checked if tokens are valid: true, expires at: 1735094058093
+[debug] [2024-12-25T01:39:25.742Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/gif-to-video-2c4ce/serviceAccounts/gif-to-video-2c4ce@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2024-12-25T01:39:25.742Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/gif-to-video-2c4ce/serviceAccounts/gif-to-video-2c4ce@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2024-12-25T01:39:25.953Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/gif-to-video-2c4ce/serviceAccounts/gif-to-video-2c4ce@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2024-12-25T01:39:25.953Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/gif-to-video-2c4ce/serviceAccounts/gif-to-video-2c4ce@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[info] 
+[info] === Deploying to 'gif-to-video-2c4ce'...
+[info] 
+[info] i  deploying functions 
+[debug] [2024-12-25T01:39:25.958Z] Checked if tokens are valid: true, expires at: 1735094058093
+[debug] [2024-12-25T01:39:25.958Z] Checked if tokens are valid: true, expires at: 1735094058093
+[debug] [2024-12-25T01:39:25.958Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/gif-to-video-2c4ce [none]
+[debug] [2024-12-25T01:39:26.216Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/gif-to-video-2c4ce 200
+[debug] [2024-12-25T01:39:26.217Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/gif-to-video-2c4ce {"projectNumber":"907697542175","projectId":"gif-to-video-2c4ce","lifecycleState":"ACTIVE","name":"gif-to-video","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2024-12-25T01:29:44.500843Z"}
+[info] i  functions: preparing codebase default for deployment 
+[info] i  functions: ensuring required API cloudfunctions.googleapis.com is enabled... 
+[debug] [2024-12-25T01:39:26.219Z] Checked if tokens are valid: true, expires at: 1735094058093
+[debug] [2024-12-25T01:39:26.219Z] Checked if tokens are valid: true, expires at: 1735094058093
+[debug] [2024-12-25T01:39:26.219Z] Checked if tokens are valid: true, expires at: 1735094058093
+[debug] [2024-12-25T01:39:26.219Z] Checked if tokens are valid: true, expires at: 1735094058093
+[info] i  functions: ensuring required API cloudbuild.googleapis.com is enabled... 
+[debug] [2024-12-25T01:39:26.219Z] Checked if tokens are valid: true, expires at: 1735094058093
+[debug] [2024-12-25T01:39:26.220Z] Checked if tokens are valid: true, expires at: 1735094058093
+[info] i  artifactregistry: ensuring required API artifactregistry.googleapis.com is enabled... 
+[debug] [2024-12-25T01:39:26.220Z] Checked if tokens are valid: true, expires at: 1735094058093
+[debug] [2024-12-25T01:39:26.220Z] Checked if tokens are valid: true, expires at: 1735094058093
+[debug] [2024-12-25T01:39:26.220Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/gif-to-video-2c4ce/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-12-25T01:39:26.220Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/gif-to-video-2c4ce/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/gif-to-video-2c4ce
+[debug] [2024-12-25T01:39:26.222Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/gif-to-video-2c4ce/services/runtimeconfig.googleapis.com [none]
+[debug] [2024-12-25T01:39:26.222Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/gif-to-video-2c4ce/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/gif-to-video-2c4ce
+[debug] [2024-12-25T01:39:26.223Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/gif-to-video-2c4ce/services/cloudbuild.googleapis.com [none]
+[debug] [2024-12-25T01:39:26.223Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/gif-to-video-2c4ce/services/cloudbuild.googleapis.com x-goog-quota-user=projects/gif-to-video-2c4ce
+[debug] [2024-12-25T01:39:26.224Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/gif-to-video-2c4ce/services/artifactregistry.googleapis.com [none]
+[debug] [2024-12-25T01:39:26.224Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/gif-to-video-2c4ce/services/artifactregistry.googleapis.com x-goog-quota-user=projects/gif-to-video-2c4ce
+[debug] [2024-12-25T01:39:26.542Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/gif-to-video-2c4ce/services/cloudfunctions.googleapis.com 200
+[debug] [2024-12-25T01:39:26.542Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/gif-to-video-2c4ce/services/cloudfunctions.googleapis.com [omitted]
+[info] ✔  functions: required API cloudfunctions.googleapis.com is enabled 
+[debug] [2024-12-25T01:39:26.598Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/gif-to-video-2c4ce/services/runtimeconfig.googleapis.com 200
+[debug] [2024-12-25T01:39:26.598Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/gif-to-video-2c4ce/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2024-12-25T01:39:26.615Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/gif-to-video-2c4ce/services/cloudbuild.googleapis.com 200
+[debug] [2024-12-25T01:39:26.615Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/gif-to-video-2c4ce/services/cloudbuild.googleapis.com [omitted]
+[warn] ⚠  functions: missing required API cloudbuild.googleapis.com. Enabling now... 
+[debug] [2024-12-25T01:39:26.616Z] Checked if tokens are valid: true, expires at: 1735094058093
+[debug] [2024-12-25T01:39:26.616Z] Checked if tokens are valid: true, expires at: 1735094058093
+[debug] [2024-12-25T01:39:26.616Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/gif-to-video-2c4ce/services/cloudbuild.googleapis.com:enable [none]
+[debug] [2024-12-25T01:39:26.616Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/gif-to-video-2c4ce/services/cloudbuild.googleapis.com:enable x-goog-quota-user=projects/gif-to-video-2c4ce
+[debug] [2024-12-25T01:39:26.620Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/gif-to-video-2c4ce/services/artifactregistry.googleapis.com 200
+[debug] [2024-12-25T01:39:26.620Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/gif-to-video-2c4ce/services/artifactregistry.googleapis.com [omitted]
+[warn] ⚠  artifactregistry: missing required API artifactregistry.googleapis.com. Enabling now... 
+[debug] [2024-12-25T01:39:26.620Z] Checked if tokens are valid: true, expires at: 1735094058093
+[debug] [2024-12-25T01:39:26.620Z] Checked if tokens are valid: true, expires at: 1735094058093
+[debug] [2024-12-25T01:39:26.621Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/gif-to-video-2c4ce/services/artifactregistry.googleapis.com:enable [none]
+[debug] [2024-12-25T01:39:26.621Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/gif-to-video-2c4ce/services/artifactregistry.googleapis.com:enable x-goog-quota-user=projects/gif-to-video-2c4ce
+[debug] [2024-12-25T01:39:27.306Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/gif-to-video-2c4ce/services/artifactregistry.googleapis.com:enable 200
+[debug] [2024-12-25T01:39:27.306Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/gif-to-video-2c4ce/services/artifactregistry.googleapis.com:enable [omitted]
+[debug] [2024-12-25T01:39:27.335Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/gif-to-video-2c4ce/services/cloudbuild.googleapis.com:enable 200
+[debug] [2024-12-25T01:39:27.336Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/gif-to-video-2c4ce/services/cloudbuild.googleapis.com:enable [omitted]
+[debug] [2024-12-25T01:39:37.309Z] Checked if tokens are valid: true, expires at: 1735094058093
+[debug] [2024-12-25T01:39:37.310Z] Checked if tokens are valid: true, expires at: 1735094058093
+[debug] [2024-12-25T01:39:37.310Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/gif-to-video-2c4ce/services/artifactregistry.googleapis.com [none]
+[debug] [2024-12-25T01:39:37.310Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/gif-to-video-2c4ce/services/artifactregistry.googleapis.com x-goog-quota-user=projects/gif-to-video-2c4ce
+[debug] [2024-12-25T01:39:37.338Z] Checked if tokens are valid: true, expires at: 1735094058093
+[debug] [2024-12-25T01:39:37.338Z] Checked if tokens are valid: true, expires at: 1735094058093
+[debug] [2024-12-25T01:39:37.339Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/gif-to-video-2c4ce/services/cloudbuild.googleapis.com [none]
+[debug] [2024-12-25T01:39:37.339Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/gif-to-video-2c4ce/services/cloudbuild.googleapis.com x-goog-quota-user=projects/gif-to-video-2c4ce
+[debug] [2024-12-25T01:39:37.705Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/gif-to-video-2c4ce/services/artifactregistry.googleapis.com 200
+[debug] [2024-12-25T01:39:37.705Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/gif-to-video-2c4ce/services/artifactregistry.googleapis.com [omitted]
+[info] ✔  artifactregistry: required API artifactregistry.googleapis.com is enabled 
+[debug] [2024-12-25T01:39:37.715Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/gif-to-video-2c4ce/services/cloudbuild.googleapis.com 200
+[debug] [2024-12-25T01:39:37.715Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/gif-to-video-2c4ce/services/cloudbuild.googleapis.com [omitted]
+[info] ✔  functions: required API cloudbuild.googleapis.com is enabled 
+[debug] [2024-12-25T01:39:37.718Z] Checked if tokens are valid: true, expires at: 1735094058093
+[debug] [2024-12-25T01:39:37.718Z] Checked if tokens are valid: true, expires at: 1735094058093
+[debug] [2024-12-25T01:39:37.718Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/gif-to-video-2c4ce/adminSdkConfig [none]
+[debug] [2024-12-25T01:39:38.160Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/gif-to-video-2c4ce/adminSdkConfig 200
+[debug] [2024-12-25T01:39:38.161Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/gif-to-video-2c4ce/adminSdkConfig {"projectId":"gif-to-video-2c4ce","storageBucket":"gif-to-video-2c4ce.firebasestorage.app"}
+[debug] [2024-12-25T01:39:38.161Z] Checked if tokens are valid: true, expires at: 1735094058093
+[debug] [2024-12-25T01:39:38.161Z] Checked if tokens are valid: true, expires at: 1735094058093
+[debug] [2024-12-25T01:39:38.162Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/gif-to-video-2c4ce/configs [none]
+[debug] [2024-12-25T01:39:38.377Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/gif-to-video-2c4ce/configs 200
+[debug] [2024-12-25T01:39:38.378Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/gif-to-video-2c4ce/configs {}
+[debug] [2024-12-25T01:39:38.380Z] Customer code is not Node
+[debug] [2024-12-25T01:39:38.380Z] Validating python source
+[debug] [2024-12-25T01:39:38.380Z] Building python source
+[info] i  functions: Loading and analyzing source code for codebase default to determine what to deploy 
+[debug] [2024-12-25T01:39:38.382Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-12-25T01:39:38.394Z] Running command with virtualenv: command=., args=["\"/Users/gabriellulu/Developer/github/gif-website/functions/venv/bin/activate\"","&&","python3.12","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
+[debug] [2024-12-25T01:39:38.453Z] stdout: /Users/gabriellulu/Developer/github/gif-website/functions/venv/lib/python3.12/site-packages/firebase_functions
+
+[debug] [2024-12-25T01:39:38.456Z] Running admin server with args: ["python3.12","\"/Users/gabriellulu/Developer/github/gif-website/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py\""] and env: {"FIREBASE_CONFIG":"{\"projectId\":\"gif-to-video-2c4ce\",\"storageBucket\":\"gif-to-video-2c4ce.firebasestorage.app\"}","GCLOUD_PROJECT":"gif-to-video-2c4ce","GOOGLE_CLOUD_QUOTA_PROJECT":"gif-to-video-2c4ce","ADMIN_PORT":"8081"} in /Users/gabriellulu/Developer/github/gif-website/functions
+[debug] [2024-12-25T01:39:38.456Z] Running command with virtualenv: command=., args=["\"/Users/gabriellulu/Developer/github/gif-website/functions/venv/bin/activate\"","&&","python3.12","\"/Users/gabriellulu/Developer/github/gif-website/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py\""]
+[info]  * Serving Flask app 'serving'
+ * Debug mode: off
+
+[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8081
+
+[error] Press CTRL+C to quit
+
+[error] 127.0.0.1 - - [24/Dec/2024 20:39:39] "GET /__/functions.yaml HTTP/1.1" 200 -
+
+[debug] [2024-12-25T01:39:39.922Z] Got response from /__/functions.yaml endpoints:
+  on_request_example:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: on_request_example
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+params: []
+requiredAPIs: []
+specVersion: v1alpha1
+
+[error] 127.0.0.1 - - [24/Dec/2024 20:39:39] "GET /__/quitquitquit HTTP/1.1" 200 -
+
+[error] /bin/sh: line 1: 55207 Terminated: 15          python3.12 "/Users/gabriellulu/Developer/github/gif-website/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py"
+
+[info] i  functions: preparing functions directory for uploading... 
+[info] i  functions: packaged /Users/gabriellulu/Developer/github/gif-website/functions (1.23 KB) for uploading 
+[debug] [2024-12-25T01:39:39.943Z] Checked if tokens are valid: true, expires at: 1735094058093
+[debug] [2024-12-25T01:39:39.943Z] Checked if tokens are valid: true, expires at: 1735094058093
+[debug] [2024-12-25T01:39:39.943Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v1/projects/gif-to-video-2c4ce/locations/-/functions [none]
+[debug] [2024-12-25T01:39:40.519Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v1/projects/gif-to-video-2c4ce/locations/-/functions 200
+[debug] [2024-12-25T01:39:40.519Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v1/projects/gif-to-video-2c4ce/locations/-/functions {}
+[debug] [2024-12-25T01:39:40.519Z] Checked if tokens are valid: true, expires at: 1735094058093
+[debug] [2024-12-25T01:39:40.519Z] Checked if tokens are valid: true, expires at: 1735094058093
+[debug] [2024-12-25T01:39:40.520Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v2/projects/gif-to-video-2c4ce/locations/-/functions filter=environment%3D%22GEN_2%22
+[debug] [2024-12-25T01:39:41.036Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v2/projects/gif-to-video-2c4ce/locations/-/functions 200
+[debug] [2024-12-25T01:39:41.036Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v2/projects/gif-to-video-2c4ce/locations/-/functions {}
+[info] i  functions: ensuring required API run.googleapis.com is enabled... 
+[debug] [2024-12-25T01:39:41.039Z] Checked if tokens are valid: true, expires at: 1735094058093
+[debug] [2024-12-25T01:39:41.039Z] Checked if tokens are valid: true, expires at: 1735094058093
+[info] i  functions: ensuring required API eventarc.googleapis.com is enabled... 
+[debug] [2024-12-25T01:39:41.040Z] Checked if tokens are valid: true, expires at: 1735094058093
+[debug] [2024-12-25T01:39:41.040Z] Checked if tokens are valid: true, expires at: 1735094058093
+[info] i  functions: ensuring required API pubsub.googleapis.com is enabled... 
+[debug] [2024-12-25T01:39:41.040Z] Checked if tokens are valid: true, expires at: 1735094058093
+[debug] [2024-12-25T01:39:41.040Z] Checked if tokens are valid: true, expires at: 1735094058093
+[info] i  functions: ensuring required API storage.googleapis.com is enabled... 
+[debug] [2024-12-25T01:39:41.040Z] Checked if tokens are valid: true, expires at: 1735094058093
+[debug] [2024-12-25T01:39:41.040Z] Checked if tokens are valid: true, expires at: 1735094058093
+[debug] [2024-12-25T01:39:41.041Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/gif-to-video-2c4ce/services/run.googleapis.com [none]
+[debug] [2024-12-25T01:39:41.041Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/gif-to-video-2c4ce/services/run.googleapis.com x-goog-quota-user=projects/gif-to-video-2c4ce
+[debug] [2024-12-25T01:39:41.043Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/gif-to-video-2c4ce/services/eventarc.googleapis.com [none]
+[debug] [2024-12-25T01:39:41.043Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/gif-to-video-2c4ce/services/eventarc.googleapis.com x-goog-quota-user=projects/gif-to-video-2c4ce
+[debug] [2024-12-25T01:39:41.045Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/gif-to-video-2c4ce/services/pubsub.googleapis.com [none]
+[debug] [2024-12-25T01:39:41.045Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/gif-to-video-2c4ce/services/pubsub.googleapis.com x-goog-quota-user=projects/gif-to-video-2c4ce
+[debug] [2024-12-25T01:39:41.046Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/gif-to-video-2c4ce/services/storage.googleapis.com [none]
+[debug] [2024-12-25T01:39:41.046Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/gif-to-video-2c4ce/services/storage.googleapis.com x-goog-quota-user=projects/gif-to-video-2c4ce
+[debug] [2024-12-25T01:39:41.441Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/gif-to-video-2c4ce/services/run.googleapis.com 200
+[debug] [2024-12-25T01:39:41.441Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/gif-to-video-2c4ce/services/run.googleapis.com [omitted]
+[warn] ⚠  functions: missing required API run.googleapis.com. Enabling now... 
+[debug] [2024-12-25T01:39:41.442Z] Checked if tokens are valid: true, expires at: 1735094058093
+[debug] [2024-12-25T01:39:41.442Z] Checked if tokens are valid: true, expires at: 1735094058093
+[debug] [2024-12-25T01:39:41.442Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/gif-to-video-2c4ce/services/run.googleapis.com:enable [none]
+[debug] [2024-12-25T01:39:41.442Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/gif-to-video-2c4ce/services/run.googleapis.com:enable x-goog-quota-user=projects/gif-to-video-2c4ce
+[debug] [2024-12-25T01:39:41.446Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/gif-to-video-2c4ce/services/eventarc.googleapis.com 200
+[debug] [2024-12-25T01:39:41.446Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/gif-to-video-2c4ce/services/eventarc.googleapis.com [omitted]
+[warn] ⚠  functions: missing required API eventarc.googleapis.com. Enabling now... 
+[debug] [2024-12-25T01:39:41.446Z] Checked if tokens are valid: true, expires at: 1735094058093
+[debug] [2024-12-25T01:39:41.446Z] Checked if tokens are valid: true, expires at: 1735094058093
+[debug] [2024-12-25T01:39:41.446Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/gif-to-video-2c4ce/services/eventarc.googleapis.com:enable [none]
+[debug] [2024-12-25T01:39:41.446Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/gif-to-video-2c4ce/services/eventarc.googleapis.com:enable x-goog-quota-user=projects/gif-to-video-2c4ce
+[debug] [2024-12-25T01:39:41.448Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/gif-to-video-2c4ce/services/storage.googleapis.com 200
+[debug] [2024-12-25T01:39:41.448Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/gif-to-video-2c4ce/services/storage.googleapis.com [omitted]
+[info] ✔  functions: required API storage.googleapis.com is enabled 
+[debug] [2024-12-25T01:39:41.449Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/gif-to-video-2c4ce/services/pubsub.googleapis.com 200
+[debug] [2024-12-25T01:39:41.449Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/gif-to-video-2c4ce/services/pubsub.googleapis.com [omitted]
+[info] ✔  functions: required API pubsub.googleapis.com is enabled 
+[debug] [2024-12-25T01:39:42.155Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/gif-to-video-2c4ce/services/run.googleapis.com:enable 200
+[debug] [2024-12-25T01:39:42.155Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/gif-to-video-2c4ce/services/run.googleapis.com:enable [omitted]
+[debug] [2024-12-25T01:39:42.155Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/gif-to-video-2c4ce/services/eventarc.googleapis.com:enable 200
+[debug] [2024-12-25T01:39:42.155Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/gif-to-video-2c4ce/services/eventarc.googleapis.com:enable [omitted]
+[debug] [2024-12-25T01:39:52.156Z] Checked if tokens are valid: true, expires at: 1735094058093
+[debug] [2024-12-25T01:39:52.157Z] Checked if tokens are valid: true, expires at: 1735094058093
+[debug] [2024-12-25T01:39:52.157Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/gif-to-video-2c4ce/services/run.googleapis.com [none]
+[debug] [2024-12-25T01:39:52.157Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/gif-to-video-2c4ce/services/run.googleapis.com x-goog-quota-user=projects/gif-to-video-2c4ce
+[debug] [2024-12-25T01:39:52.166Z] Checked if tokens are valid: true, expires at: 1735094058093
+[debug] [2024-12-25T01:39:52.166Z] Checked if tokens are valid: true, expires at: 1735094058093
+[debug] [2024-12-25T01:39:52.166Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/gif-to-video-2c4ce/services/eventarc.googleapis.com [none]
+[debug] [2024-12-25T01:39:52.166Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/gif-to-video-2c4ce/services/eventarc.googleapis.com x-goog-quota-user=projects/gif-to-video-2c4ce
+[debug] [2024-12-25T01:39:52.601Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/gif-to-video-2c4ce/services/eventarc.googleapis.com 200
+[debug] [2024-12-25T01:39:52.601Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/gif-to-video-2c4ce/services/eventarc.googleapis.com [omitted]
+[info] ✔  functions: required API eventarc.googleapis.com is enabled 
+[debug] [2024-12-25T01:39:52.607Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/gif-to-video-2c4ce/services/run.googleapis.com 200
+[debug] [2024-12-25T01:39:52.607Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/gif-to-video-2c4ce/services/run.googleapis.com [omitted]
+[info] ✔  functions: required API run.googleapis.com is enabled 
+[info] i  functions: generating the service identity for pubsub.googleapis.com... 
+[debug] [2024-12-25T01:39:52.609Z] Checked if tokens are valid: true, expires at: 1735094058093
+[debug] [2024-12-25T01:39:52.609Z] Checked if tokens are valid: true, expires at: 1735094058093
+[info] i  functions: generating the service identity for eventarc.googleapis.com... 
+[debug] [2024-12-25T01:39:52.609Z] Checked if tokens are valid: true, expires at: 1735094058093
+[debug] [2024-12-25T01:39:52.609Z] Checked if tokens are valid: true, expires at: 1735094058093
+[debug] [2024-12-25T01:39:52.609Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1beta1/projects/907697542175/services/pubsub.googleapis.com:generateServiceIdentity [none]
+[debug] [2024-12-25T01:39:52.611Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1beta1/projects/907697542175/services/eventarc.googleapis.com:generateServiceIdentity [none]
+[debug] [2024-12-25T01:39:53.315Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1beta1/projects/907697542175/services/eventarc.googleapis.com:generateServiceIdentity 200
+[debug] [2024-12-25T01:39:53.316Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1beta1/projects/907697542175/services/eventarc.googleapis.com:generateServiceIdentity {"name":"operations/finished.DONE_OPERATION","done":true,"response":{"@type":"type.googleapis.com/google.api.serviceusage.v1beta1.ServiceIdentity","email":"service-907697542175@gcp-sa-eventarc.iam.gserviceaccount.com","uniqueId":"101083015034816053835"}}
+[debug] [2024-12-25T01:39:53.316Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1beta1/projects/907697542175/services/pubsub.googleapis.com:generateServiceIdentity 200
+[debug] [2024-12-25T01:39:53.316Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1beta1/projects/907697542175/services/pubsub.googleapis.com:generateServiceIdentity {"name":"operations/finished.DONE_OPERATION","done":true,"response":{"@type":"type.googleapis.com/google.api.serviceusage.v1beta1.ServiceIdentity","email":"service-907697542175@gcp-sa-pubsub.iam.gserviceaccount.com","uniqueId":"115513221103259639034"}}
+[debug] [2024-12-25T01:39:53.317Z] Checked if tokens are valid: true, expires at: 1735094058093
+[debug] [2024-12-25T01:39:53.318Z] Checked if tokens are valid: true, expires at: 1735094058093
+[debug] [2024-12-25T01:39:53.318Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/gif-to-video-2c4ce [none]
+[debug] [2024-12-25T01:39:53.561Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/gif-to-video-2c4ce 200
+[debug] [2024-12-25T01:39:53.561Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/gif-to-video-2c4ce {"projectNumber":"907697542175","projectId":"gif-to-video-2c4ce","lifecycleState":"ACTIVE","name":"gif-to-video","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2024-12-25T01:29:44.500843Z"}
+[debug] [2024-12-25T01:39:53.563Z] [functions] found 1 new HTTP functions, testing setIamPolicy permission...
+[debug] [2024-12-25T01:39:53.564Z] Checked if tokens are valid: true, expires at: 1735094058093
+[debug] [2024-12-25T01:39:53.564Z] Checked if tokens are valid: true, expires at: 1735094058093
+[debug] [2024-12-25T01:39:53.564Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/gif-to-video-2c4ce:testIamPermissions [none]
+[debug] [2024-12-25T01:39:53.564Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/gif-to-video-2c4ce:testIamPermissions x-goog-quota-user=projects/gif-to-video-2c4ce
+[debug] [2024-12-25T01:39:53.564Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/gif-to-video-2c4ce:testIamPermissions {"permissions":["cloudfunctions.functions.setIamPolicy"]}
+[debug] [2024-12-25T01:39:53.771Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/gif-to-video-2c4ce:testIamPermissions 200
+[debug] [2024-12-25T01:39:53.772Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/gif-to-video-2c4ce:testIamPermissions {"permissions":["cloudfunctions.functions.setIamPolicy"]}
+[debug] [2024-12-25T01:39:53.772Z] [functions] found setIamPolicy permission, proceeding with deploy
+[debug] [2024-12-25T01:39:53.772Z] Checked if tokens are valid: true, expires at: 1735094058093
+[debug] [2024-12-25T01:39:53.772Z] Checked if tokens are valid: true, expires at: 1735094058093
+[debug] [2024-12-25T01:39:53.772Z] >>> [apiv2][query] POST https://cloudfunctions.googleapis.com/v2/projects/gif-to-video-2c4ce/locations/us-central1/functions:generateUploadUrl [none]
+[debug] [2024-12-25T01:39:55.160Z] <<< [apiv2][status] POST https://cloudfunctions.googleapis.com/v2/projects/gif-to-video-2c4ce/locations/us-central1/functions:generateUploadUrl 200
+[debug] [2024-12-25T01:39:55.161Z] <<< [apiv2][body] POST https://cloudfunctions.googleapis.com/v2/projects/gif-to-video-2c4ce/locations/us-central1/functions:generateUploadUrl {"uploadUrl":"https://storage.googleapis.com/gcf-v2-uploads-907697542175.us-central1.cloudfunctions.appspot.com/a1620dc8-7a05-449b-a1ec-685a2e3ee0ce.zip?GoogleAccessId=service-907697542175@gcf-admin-robot.iam.gserviceaccount.com&Expires=1735092595&Signature=CtTM4BLsi0S863yCna36ZH4thECqUV1DLN558E1L%2BuHgfmeToj%2BInx0y%2Fw3G%2BQAZUGbxv9C2WEVXoKYM4XbxUC%2FYPt9cLCESEQChxaDW6uIdFiXAwE9JUf6UtWTxML5m0tCx7n6J9%2F0WVRqNdIebkNR%2BfeVCNb6cyE3HJnxJuJf2GjdQuLe0UfWdmvDYb0gklkihq01cLopvhQQWoe7%2FmxSZaIHfKtJn9hJ6FuR8npB33OAA3DzjZcrK5mQiTKwVNECtN44bjGVd2desp9YzTDB42fL66%2Fosi%2B%2Bi56jdnO6SN6JCcIKO6w%2FXrp7UXCgSgwbycqa%2BPhaSX1VQ%2FrZIIQ%3D%3D","storageSource":{"bucket":"gcf-v2-uploads-907697542175.us-central1.cloudfunctions.appspot.com","object":"a1620dc8-7a05-449b-a1ec-685a2e3ee0ce.zip"}}
+[debug] [2024-12-25T01:39:55.163Z] >>> [apiv2][query] PUT https://storage.googleapis.com/gcf-v2-uploads-907697542175.us-central1.cloudfunctions.appspot.com/a1620dc8-7a05-449b-a1ec-685a2e3ee0ce.zip GoogleAccessId=service-907697542175%40gcf-admin-robot.iam.gserviceaccount.com&Expires=1735092595&Signature=CtTM4BLsi0S863yCna36ZH4thECqUV1DLN558E1L%2BuHgfmeToj%2BInx0y%2Fw3G%2BQAZUGbxv9C2WEVXoKYM4XbxUC%2FYPt9cLCESEQChxaDW6uIdFiXAwE9JUf6UtWTxML5m0tCx7n6J9%2F0WVRqNdIebkNR%2BfeVCNb6cyE3HJnxJuJf2GjdQuLe0UfWdmvDYb0gklkihq01cLopvhQQWoe7%2FmxSZaIHfKtJn9hJ6FuR8npB33OAA3DzjZcrK5mQiTKwVNECtN44bjGVd2desp9YzTDB42fL66%2Fosi%2B%2Bi56jdnO6SN6JCcIKO6w%2FXrp7UXCgSgwbycqa%2BPhaSX1VQ%2FrZIIQ%3D%3D
+[debug] [2024-12-25T01:39:55.163Z] >>> [apiv2][body] PUT https://storage.googleapis.com/gcf-v2-uploads-907697542175.us-central1.cloudfunctions.appspot.com/a1620dc8-7a05-449b-a1ec-685a2e3ee0ce.zip [stream]
+[debug] [2024-12-25T01:39:55.375Z] <<< [apiv2][status] PUT https://storage.googleapis.com/gcf-v2-uploads-907697542175.us-central1.cloudfunctions.appspot.com/a1620dc8-7a05-449b-a1ec-685a2e3ee0ce.zip 200
+[debug] [2024-12-25T01:39:55.375Z] <<< [apiv2][body] PUT https://storage.googleapis.com/gcf-v2-uploads-907697542175.us-central1.cloudfunctions.appspot.com/a1620dc8-7a05-449b-a1ec-685a2e3ee0ce.zip [omitted]
+[info] ✔  functions: functions folder uploaded successfully 
+[info] i  functions: creating Python 3.12 (2nd Gen) function on_request_example(us-central1)... 
+[debug] [2024-12-25T01:39:55.381Z] Checked if tokens are valid: true, expires at: 1735094058093
+[debug] [2024-12-25T01:39:55.381Z] Checked if tokens are valid: true, expires at: 1735094058093
+[debug] [2024-12-25T01:39:55.381Z] >>> [apiv2][query] POST https://cloudfunctions.googleapis.com/v2/projects/gif-to-video-2c4ce/locations/us-central1/functions functionId=on_request_example
+[debug] [2024-12-25T01:39:55.382Z] >>> [apiv2][body] POST https://cloudfunctions.googleapis.com/v2/projects/gif-to-video-2c4ce/locations/us-central1/functions {"name":"projects/gif-to-video-2c4ce/locations/us-central1/functions/on_request_example","buildConfig":{"runtime":"python312","entryPoint":"on_request_example","source":{"storageSource":{"bucket":"gcf-v2-uploads-907697542175.us-central1.cloudfunctions.appspot.com","object":"a1620dc8-7a05-449b-a1ec-685a2e3ee0ce.zip"}},"environmentVariables":{"GOOGLE_NODE_RUN_SCRIPTS":""}},"serviceConfig":{"environmentVariables":{"FIREBASE_CONFIG":"{\"projectId\":\"gif-to-video-2c4ce\",\"storageBucket\":\"gif-to-video-2c4ce.firebasestorage.app\"}","GCLOUD_PROJECT":"gif-to-video-2c4ce","EVENTARC_CLOUD_EVENT_SOURCE":"projects/gif-to-video-2c4ce/locations/us-central1/services/on_request_example","FUNCTION_TARGET":"on_request_example"},"secretEnvironmentVariables":[],"ingressSettings":null,"timeoutSeconds":null,"serviceAccountEmail":null,"availableMemory":"256Mi","minInstanceCount":null,"maxInstanceCount":null,"maxInstanceRequestConcurrency":80,"availableCpu":"1"},"labels":{"deployment-tool":"cli-firebase","firebase-functions-hash":"e993056391a517b7c11c75b19f16a5b0e8c41304"}}
+[debug] [2024-12-25T01:39:56.698Z] <<< [apiv2][status] POST https://cloudfunctions.googleapis.com/v2/projects/gif-to-video-2c4ce/locations/us-central1/functions 200
+[debug] [2024-12-25T01:39:56.699Z] <<< [apiv2][body] POST https://cloudfunctions.googleapis.com/v2/projects/gif-to-video-2c4ce/locations/us-central1/functions {"name":"projects/gif-to-video-2c4ce/locations/us-central1/operations/operation-1735090795632-62a0e4e86d95a-b75f3b89-bc46f7c5","metadata":{"@type":"type.googleapis.com/google.cloud.functions.v2.OperationMetadata","createTime":"2024-12-25T01:39:56.601243704Z","target":"projects/gif-to-video-2c4ce/locations/us-central1/functions/on_request_example","verb":"create","cancelRequested":false,"apiVersion":"v2"},"done":false}
+[debug] [2024-12-25T01:39:56.700Z] Checked if tokens are valid: true, expires at: 1735094058093
+[debug] [2024-12-25T01:39:56.700Z] Checked if tokens are valid: true, expires at: 1735094058093
+[debug] [2024-12-25T01:39:56.701Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v2/projects/gif-to-video-2c4ce/locations/us-central1/operations/operation-1735090795632-62a0e4e86d95a-b75f3b89-bc46f7c5 [none]
+[debug] [2024-12-25T01:39:56.968Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v2/projects/gif-to-video-2c4ce/locations/us-central1/operations/operation-1735090795632-62a0e4e86d95a-b75f3b89-bc46f7c5 200
+[debug] [2024-12-25T01:39:56.969Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v2/projects/gif-to-video-2c4ce/locations/us-central1/operations/operation-1735090795632-62a0e4e86d95a-b75f3b89-bc46f7c5 {"name":"projects/gif-to-video-2c4ce/locations/us-central1/operations/operation-1735090795632-62a0e4e86d95a-b75f3b89-bc46f7c5","metadata":{"@type":"type.googleapis.com/google.cloud.functions.v2.OperationMetadata","createTime":"2024-12-25T01:39:56.601243704Z","target":"projects/gif-to-video-2c4ce/locations/us-central1/functions/on_request_example","verb":"create","cancelRequested":false,"apiVersion":"v2","requestResource":{"@type":"type.googleapis.com/google.cloud.functions.v2.Function","name":"projects/gif-to-video-2c4ce/locations/us-central1/functions/on_request_example","buildConfig":{"runtime":"python312","entryPoint":"on_request_example","source":{"storageSource":{"bucket":"gcf-v2-sources-907697542175-us-central1","object":"on_request_example/function-source.zip","generation":"1735090796272056"}},"environmentVariables":{"GOOGLE_NODE_RUN_SCRIPTS":""},"serviceAccount":"projects/gif-to-video-2c4ce/serviceAccounts/907697542175-compute@developer.gserviceaccount.com","automaticUpdatePolicy":{}},"serviceConfig":{"service":"projects/gif-to-video-2c4ce/locations/us-central1/services/on-request-example","timeoutSeconds":60,"environmentVariables":{"FIREBASE_CONFIG":"{\"projectId\":\"gif-to-video-2c4ce\",\"storageBucket\":\"gif-to-video-2c4ce.firebasestorage.app\"}","GCLOUD_PROJECT":"gif-to-video-2c4ce","EVENTARC_CLOUD_EVENT_SOURCE":"projects/gif-to-video-2c4ce/locations/us-central1/services/on_request_example","FUNCTION_TARGET":"on_request_example","LOG_EXECUTION_ID":"true"},"ingressSettings":"ALLOW_ALL","serviceAccountEmail":"907697542175-compute@developer.gserviceaccount.com","availableMemory":"256Mi","maxInstanceRequestConcurrency":80,"availableCpu":"1"},"labels":{"deployment-tool":"cli-firebase","firebase-functions-hash":"e993056391a517b7c11c75b19f16a5b0e8c41304"},"environment":"GEN_2"},"stages":[{"name":"BUILD","state":"NOT_STARTED"},{"name":"SERVICE","state":"NOT_STARTED"}],"operationType":"CREATE_FUNCTION"},"done":false}
+[debug] [2024-12-25T01:39:57.471Z] [create-default-us-central1-on_request_example] Retrying task index 0
+[debug] [2024-12-25T01:39:57.472Z] Checked if tokens are valid: true, expires at: 1735094058093
+[debug] [2024-12-25T01:39:57.472Z] Checked if tokens are valid: true, expires at: 1735094058093
+[debug] [2024-12-25T01:39:57.472Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v2/projects/gif-to-video-2c4ce/locations/us-central1/operations/operation-1735090795632-62a0e4e86d95a-b75f3b89-bc46f7c5 [none]
+[debug] [2024-12-25T01:39:57.763Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v2/projects/gif-to-video-2c4ce/locations/us-central1/operations/operation-1735090795632-62a0e4e86d95a-b75f3b89-bc46f7c5 200
+[debug] [2024-12-25T01:39:57.763Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v2/projects/gif-to-video-2c4ce/locations/us-central1/operations/operation-1735090795632-62a0e4e86d95a-b75f3b89-bc46f7c5 {"name":"projects/gif-to-video-2c4ce/locations/us-central1/operations/operation-1735090795632-62a0e4e86d95a-b75f3b89-bc46f7c5","metadata":{"@type":"type.googleapis.com/google.cloud.functions.v2.OperationMetadata","createTime":"2024-12-25T01:39:56.601243704Z","target":"projects/gif-to-video-2c4ce/locations/us-central1/functions/on_request_example","verb":"create","cancelRequested":false,"apiVersion":"v2","requestResource":{"@type":"type.googleapis.com/google.cloud.functions.v2.Function","name":"projects/gif-to-video-2c4ce/locations/us-central1/functions/on_request_example","buildConfig":{"runtime":"python312","entryPoint":"on_request_example","source":{"storageSource":{"bucket":"gcf-v2-sources-907697542175-us-central1","object":"on_request_example/function-source.zip","generation":"1735090796272056"}},"environmentVariables":{"GOOGLE_NODE_RUN_SCRIPTS":""},"serviceAccount":"projects/gif-to-video-2c4ce/serviceAccounts/907697542175-compute@developer.gserviceaccount.com","automaticUpdatePolicy":{}},"serviceConfig":{"service":"projects/gif-to-video-2c4ce/locations/us-central1/services/on-request-example","timeoutSeconds":60,"environmentVariables":{"FIREBASE_CONFIG":"{\"projectId\":\"gif-to-video-2c4ce\",\"storageBucket\":\"gif-to-video-2c4ce.firebasestorage.app\"}","GCLOUD_PROJECT":"gif-to-video-2c4ce","EVENTARC_CLOUD_EVENT_SOURCE":"projects/gif-to-video-2c4ce/locations/us-central1/services/on_request_example","FUNCTION_TARGET":"on_request_example","LOG_EXECUTION_ID":"true"},"ingressSettings":"ALLOW_ALL","serviceAccountEmail":"907697542175-compute@developer.gserviceaccount.com","availableMemory":"256Mi","maxInstanceRequestConcurrency":80,"availableCpu":"1"},"labels":{"deployment-tool":"cli-firebase","firebase-functions-hash":"e993056391a517b7c11c75b19f16a5b0e8c41304"},"environment":"GEN_2"},"stages":[{"name":"BUILD","state":"NOT_STARTED"},{"name":"SERVICE","state":"NOT_STARTED"}],"operationType":"CREATE_FUNCTION"},"done":false}
+[debug] [2024-12-25T01:39:58.765Z] [create-default-us-central1-on_request_example] Retrying task index 0
+[debug] [2024-12-25T01:39:58.765Z] Checked if tokens are valid: true, expires at: 1735094058093
+[debug] [2024-12-25T01:39:58.766Z] Checked if tokens are valid: true, expires at: 1735094058093
+[debug] [2024-12-25T01:39:58.766Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v2/projects/gif-to-video-2c4ce/locations/us-central1/operations/operation-1735090795632-62a0e4e86d95a-b75f3b89-bc46f7c5 [none]
+[debug] [2024-12-25T01:39:59.040Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v2/projects/gif-to-video-2c4ce/locations/us-central1/operations/operation-1735090795632-62a0e4e86d95a-b75f3b89-bc46f7c5 200
+[debug] [2024-12-25T01:39:59.040Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v2/projects/gif-to-video-2c4ce/locations/us-central1/operations/operation-1735090795632-62a0e4e86d95a-b75f3b89-bc46f7c5 {"name":"projects/gif-to-video-2c4ce/locations/us-central1/operations/operation-1735090795632-62a0e4e86d95a-b75f3b89-bc46f7c5","metadata":{"@type":"type.googleapis.com/google.cloud.functions.v2.OperationMetadata","createTime":"2024-12-25T01:39:56.601243704Z","target":"projects/gif-to-video-2c4ce/locations/us-central1/functions/on_request_example","verb":"create","cancelRequested":false,"apiVersion":"v2","requestResource":{"@type":"type.googleapis.com/google.cloud.functions.v2.Function","name":"projects/gif-to-video-2c4ce/locations/us-central1/functions/on_request_example","buildConfig":{"runtime":"python312","entryPoint":"on_request_example","source":{"storageSource":{"bucket":"gcf-v2-sources-907697542175-us-central1","object":"on_request_example/function-source.zip","generation":"1735090796272056"}},"environmentVariables":{"GOOGLE_NODE_RUN_SCRIPTS":""},"serviceAccount":"projects/gif-to-video-2c4ce/serviceAccounts/907697542175-compute@developer.gserviceaccount.com","automaticUpdatePolicy":{}},"serviceConfig":{"service":"projects/gif-to-video-2c4ce/locations/us-central1/services/on-request-example","timeoutSeconds":60,"environmentVariables":{"FIREBASE_CONFIG":"{\"projectId\":\"gif-to-video-2c4ce\",\"storageBucket\":\"gif-to-video-2c4ce.firebasestorage.app\"}","GCLOUD_PROJECT":"gif-to-video-2c4ce","EVENTARC_CLOUD_EVENT_SOURCE":"projects/gif-to-video-2c4ce/locations/us-central1/services/on_request_example","FUNCTION_TARGET":"on_request_example","LOG_EXECUTION_ID":"true"},"ingressSettings":"ALLOW_ALL","serviceAccountEmail":"907697542175-compute@developer.gserviceaccount.com","availableMemory":"256Mi","maxInstanceRequestConcurrency":80,"availableCpu":"1"},"labels":{"deployment-tool":"cli-firebase","firebase-functions-hash":"e993056391a517b7c11c75b19f16a5b0e8c41304"},"environment":"GEN_2"},"stages":[{"name":"BUILD","state":"NOT_STARTED"},{"name":"SERVICE","state":"NOT_STARTED"}],"operationType":"CREATE_FUNCTION"},"done":false}
+[debug] [2024-12-25T01:40:01.042Z] [create-default-us-central1-on_request_example] Retrying task index 0
+[debug] [2024-12-25T01:40:01.043Z] Checked if tokens are valid: true, expires at: 1735094058093
+[debug] [2024-12-25T01:40:01.043Z] Checked if tokens are valid: true, expires at: 1735094058093
+[debug] [2024-12-25T01:40:01.043Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v2/projects/gif-to-video-2c4ce/locations/us-central1/operations/operation-1735090795632-62a0e4e86d95a-b75f3b89-bc46f7c5 [none]
+[debug] [2024-12-25T01:40:01.290Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v2/projects/gif-to-video-2c4ce/locations/us-central1/operations/operation-1735090795632-62a0e4e86d95a-b75f3b89-bc46f7c5 200
+[debug] [2024-12-25T01:40:01.290Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v2/projects/gif-to-video-2c4ce/locations/us-central1/operations/operation-1735090795632-62a0e4e86d95a-b75f3b89-bc46f7c5 {"name":"projects/gif-to-video-2c4ce/locations/us-central1/operations/operation-1735090795632-62a0e4e86d95a-b75f3b89-bc46f7c5","metadata":{"@type":"type.googleapis.com/google.cloud.functions.v2.OperationMetadata","createTime":"2024-12-25T01:39:56.601243704Z","target":"projects/gif-to-video-2c4ce/locations/us-central1/functions/on_request_example","verb":"create","cancelRequested":false,"apiVersion":"v2","requestResource":{"@type":"type.googleapis.com/google.cloud.functions.v2.Function","name":"projects/gif-to-video-2c4ce/locations/us-central1/functions/on_request_example","buildConfig":{"runtime":"python312","entryPoint":"on_request_example","source":{"storageSource":{"bucket":"gcf-v2-sources-907697542175-us-central1","object":"on_request_example/function-source.zip","generation":"1735090796272056"}},"environmentVariables":{"GOOGLE_NODE_RUN_SCRIPTS":""},"serviceAccount":"projects/gif-to-video-2c4ce/serviceAccounts/907697542175-compute@developer.gserviceaccount.com","automaticUpdatePolicy":{}},"serviceConfig":{"service":"projects/gif-to-video-2c4ce/locations/us-central1/services/on-request-example","timeoutSeconds":60,"environmentVariables":{"FIREBASE_CONFIG":"{\"projectId\":\"gif-to-video-2c4ce\",\"storageBucket\":\"gif-to-video-2c4ce.firebasestorage.app\"}","GCLOUD_PROJECT":"gif-to-video-2c4ce","EVENTARC_CLOUD_EVENT_SOURCE":"projects/gif-to-video-2c4ce/locations/us-central1/services/on_request_example","FUNCTION_TARGET":"on_request_example","LOG_EXECUTION_ID":"true"},"ingressSettings":"ALLOW_ALL","serviceAccountEmail":"907697542175-compute@developer.gserviceaccount.com","availableMemory":"256Mi","maxInstanceRequestConcurrency":80,"availableCpu":"1"},"labels":{"deployment-tool":"cli-firebase","firebase-functions-hash":"e993056391a517b7c11c75b19f16a5b0e8c41304"},"environment":"GEN_2"},"stages":[{"name":"BUILD","state":"NOT_STARTED"},{"name":"SERVICE","state":"NOT_STARTED"}],"operationType":"CREATE_FUNCTION"},"done":false}
+[debug] [2024-12-25T01:40:05.291Z] [create-default-us-central1-on_request_example] Retrying task index 0
+[debug] [2024-12-25T01:40:05.292Z] Checked if tokens are valid: true, expires at: 1735094058093
+[debug] [2024-12-25T01:40:05.292Z] Checked if tokens are valid: true, expires at: 1735094058093
+[debug] [2024-12-25T01:40:05.292Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v2/projects/gif-to-video-2c4ce/locations/us-central1/operations/operation-1735090795632-62a0e4e86d95a-b75f3b89-bc46f7c5 [none]
+[debug] [2024-12-25T01:40:05.554Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v2/projects/gif-to-video-2c4ce/locations/us-central1/operations/operation-1735090795632-62a0e4e86d95a-b75f3b89-bc46f7c5 200
+[debug] [2024-12-25T01:40:05.555Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v2/projects/gif-to-video-2c4ce/locations/us-central1/operations/operation-1735090795632-62a0e4e86d95a-b75f3b89-bc46f7c5 {"name":"projects/gif-to-video-2c4ce/locations/us-central1/operations/operation-1735090795632-62a0e4e86d95a-b75f3b89-bc46f7c5","metadata":{"@type":"type.googleapis.com/google.cloud.functions.v2.OperationMetadata","createTime":"2024-12-25T01:39:56.601243704Z","target":"projects/gif-to-video-2c4ce/locations/us-central1/functions/on_request_example","verb":"create","cancelRequested":false,"apiVersion":"v2","requestResource":{"@type":"type.googleapis.com/google.cloud.functions.v2.Function","name":"projects/gif-to-video-2c4ce/locations/us-central1/functions/on_request_example","buildConfig":{"runtime":"python312","entryPoint":"on_request_example","source":{"storageSource":{"bucket":"gcf-v2-sources-907697542175-us-central1","object":"on_request_example/function-source.zip","generation":"1735090796272056"}},"environmentVariables":{"GOOGLE_NODE_RUN_SCRIPTS":""},"serviceAccount":"projects/gif-to-video-2c4ce/serviceAccounts/907697542175-compute@developer.gserviceaccount.com","automaticUpdatePolicy":{}},"serviceConfig":{"service":"projects/gif-to-video-2c4ce/locations/us-central1/services/on-request-example","timeoutSeconds":60,"environmentVariables":{"FIREBASE_CONFIG":"{\"projectId\":\"gif-to-video-2c4ce\",\"storageBucket\":\"gif-to-video-2c4ce.firebasestorage.app\"}","GCLOUD_PROJECT":"gif-to-video-2c4ce","EVENTARC_CLOUD_EVENT_SOURCE":"projects/gif-to-video-2c4ce/locations/us-central1/services/on_request_example","FUNCTION_TARGET":"on_request_example","LOG_EXECUTION_ID":"true"},"ingressSettings":"ALLOW_ALL","serviceAccountEmail":"907697542175-compute@developer.gserviceaccount.com","availableMemory":"256Mi","maxInstanceRequestConcurrency":80,"availableCpu":"1"},"labels":{"deployment-tool":"cli-firebase","firebase-functions-hash":"e993056391a517b7c11c75b19f16a5b0e8c41304"},"environment":"GEN_2"},"stages":[{"name":"BUILD","state":"NOT_STARTED"},{"name":"SERVICE","state":"NOT_STARTED"}],"operationType":"CREATE_FUNCTION"},"done":false}
+[debug] [2024-12-25T01:40:13.559Z] [create-default-us-central1-on_request_example] Retrying task index 0
+[debug] [2024-12-25T01:40:13.560Z] Checked if tokens are valid: true, expires at: 1735094058093
+[debug] [2024-12-25T01:40:13.560Z] Checked if tokens are valid: true, expires at: 1735094058093
+[debug] [2024-12-25T01:40:13.560Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v2/projects/gif-to-video-2c4ce/locations/us-central1/operations/operation-1735090795632-62a0e4e86d95a-b75f3b89-bc46f7c5 [none]
+[debug] [2024-12-25T01:40:13.828Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v2/projects/gif-to-video-2c4ce/locations/us-central1/operations/operation-1735090795632-62a0e4e86d95a-b75f3b89-bc46f7c5 200
+[debug] [2024-12-25T01:40:13.828Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v2/projects/gif-to-video-2c4ce/locations/us-central1/operations/operation-1735090795632-62a0e4e86d95a-b75f3b89-bc46f7c5 {"name":"projects/gif-to-video-2c4ce/locations/us-central1/operations/operation-1735090795632-62a0e4e86d95a-b75f3b89-bc46f7c5","metadata":{"@type":"type.googleapis.com/google.cloud.functions.v2.OperationMetadata","createTime":"2024-12-25T01:39:56.601243704Z","endTime":"2024-12-25T01:40:09.985062188Z","target":"projects/gif-to-video-2c4ce/locations/us-central1/functions/on_request_example","verb":"create","cancelRequested":false,"apiVersion":"v2","requestResource":{"@type":"type.googleapis.com/google.cloud.functions.v2.Function","name":"projects/gif-to-video-2c4ce/locations/us-central1/functions/on_request_example","buildConfig":{"runtime":"python312","entryPoint":"on_request_example","source":{"storageSource":{"bucket":"gcf-v2-sources-907697542175-us-central1","object":"on_request_example/function-source.zip","generation":"1735090796272056"}},"environmentVariables":{"GOOGLE_NODE_RUN_SCRIPTS":""},"serviceAccount":"projects/gif-to-video-2c4ce/serviceAccounts/907697542175-compute@developer.gserviceaccount.com","automaticUpdatePolicy":{}},"serviceConfig":{"service":"projects/gif-to-video-2c4ce/locations/us-central1/services/on-request-example","timeoutSeconds":60,"environmentVariables":{"FIREBASE_CONFIG":"{\"projectId\":\"gif-to-video-2c4ce\",\"storageBucket\":\"gif-to-video-2c4ce.firebasestorage.app\"}","GCLOUD_PROJECT":"gif-to-video-2c4ce","EVENTARC_CLOUD_EVENT_SOURCE":"projects/gif-to-video-2c4ce/locations/us-central1/services/on_request_example","FUNCTION_TARGET":"on_request_example","LOG_EXECUTION_ID":"true"},"ingressSettings":"ALLOW_ALL","serviceAccountEmail":"907697542175-compute@developer.gserviceaccount.com","availableMemory":"256Mi","maxInstanceRequestConcurrency":80,"availableCpu":"1"},"labels":{"deployment-tool":"cli-firebase","firebase-functions-hash":"e993056391a517b7c11c75b19f16a5b0e8c41304"},"environment":"GEN_2"},"stages":[{"name":"ARTIFACT_REGISTRY","message":"Deleting function artifacts in Artifact Registry","state":"COMPLETE"},{"name":"SERVICE","message":"Deleting Cloud Run service","state":"COMPLETE","resource":"projects/gif-to-video-2c4ce/locations/us-central1/services/on-request-example"}],"operationType":"CREATE_FUNCTION"},"done":true,"error":{"code":13,"message":"Could not build the function. "}}
+[debug] [2024-12-25T01:40:13.828Z] Got source token undefined for region us-central1
+[error] Could not build the function. 
+[debug] [2024-12-25T01:40:13.837Z] Total Function Deployment time: 18451
+[debug] [2024-12-25T01:40:13.837Z] 1 Functions Deployed
+[debug] [2024-12-25T01:40:13.837Z] 1 Functions Errored
+[debug] [2024-12-25T01:40:13.837Z] 0 Function Deployments Aborted
+[debug] [2024-12-25T01:40:13.837Z] Average Function Deployment time: 18451
+[info] 
+[info] Functions deploy had errors with the following functions:
+	on_request_example(us-central1)
+[debug] [2024-12-25T01:40:13.925Z] Not printing URL for HTTPS function. Typically this means it didn't match a filter or we failed deployment
+[info] i  functions: cleaning up build files... 
+[debug] [2024-12-25T01:40:13.926Z] Checked if tokens are valid: true, expires at: 1735094058093
+[debug] [2024-12-25T01:40:13.926Z] Checked if tokens are valid: true, expires at: 1735094058093
+[debug] [2024-12-25T01:40:13.927Z] Checked if tokens are valid: true, expires at: 1735094058093
+[debug] [2024-12-25T01:40:13.927Z] Checked if tokens are valid: true, expires at: 1735094058093
+[debug] [2024-12-25T01:40:13.927Z] >>> [apiv2][query] DELETE https://artifactregistry.googleapis.com/v1beta2/projects/gif-to-video-2c4ce/locations/us-central1/repositories/gcf-artifacts/packages/on__request__example [none]
+[debug] [2024-12-25T01:40:13.929Z] >>> [apiv2][query] GET https://us.gcr.io/v2/gif-to-video-2c4ce/gcf/us-central1/tags/list [none]
+[debug] [2024-12-25T01:40:14.228Z] <<< [apiv2][status] DELETE https://artifactregistry.googleapis.com/v1beta2/projects/gif-to-video-2c4ce/locations/us-central1/repositories/gcf-artifacts/packages/on__request__example 404
+[debug] [2024-12-25T01:40:14.228Z] <<< [apiv2][body] DELETE https://artifactregistry.googleapis.com/v1beta2/projects/gif-to-video-2c4ce/locations/us-central1/repositories/gcf-artifacts/packages/on__request__example {"error":{"code":404,"message":"Package \"projects/gif-to-video-2c4ce/locations/us-central1/repositories/gcf-artifacts/packages/on__request__example\" was not found.","status":"NOT_FOUND"}}
+[debug] [2024-12-25T01:40:14.409Z] <<< [apiv2][status] GET https://us.gcr.io/v2/gif-to-video-2c4ce/gcf/us-central1/tags/list 404
+[debug] [2024-12-25T01:40:14.409Z] <<< [apiv2][body] GET https://us.gcr.io/v2/gif-to-video-2c4ce/gcf/us-central1/tags/list {"errors":[{"code":"NAME_UNKNOWN","message":"Repository \"us.gcr.io\" not found"}]}
+[debug] [2024-12-25T01:40:14.410Z] Failed docker command with error  Request to https://us.gcr.io/v2/gif-to-video-2c4ce/gcf/us-central1/tags/list had HTTP Error: 404, Not Found {"name":"FirebaseError","children":[],"context":{"body":{"errors":[{"code":"NAME_UNKNOWN","message":"Repository \"us.gcr.io\" not found"}],"error":{"message":"Not Found"}},"response":{"statusCode":404}},"exit":1,"message":"Request to https://us.gcr.io/v2/gif-to-video-2c4ce/gcf/us-central1/tags/list had HTTP Error: 404, Not Found","status":404}
+[debug] [2024-12-25T01:40:14.412Z] Checked if tokens are valid: true, expires at: 1735094058093
+[debug] [2024-12-25T01:40:14.412Z] Checked if tokens are valid: true, expires at: 1735094058093
+[debug] [2024-12-25T01:40:14.412Z] >>> [apiv2][query] GET https://us.gcr.io/v2/gif-to-video-2c4ce/gcf/us-central1/tags/list [none]
+[debug] [2024-12-25T01:40:14.647Z] <<< [apiv2][status] GET https://us.gcr.io/v2/gif-to-video-2c4ce/gcf/us-central1/tags/list 404
+[debug] [2024-12-25T01:40:14.647Z] <<< [apiv2][body] GET https://us.gcr.io/v2/gif-to-video-2c4ce/gcf/us-central1/tags/list {"errors":[{"code":"NAME_UNKNOWN","message":"Repository \"us.gcr.io\" not found"}]}
+[debug] [2024-12-25T01:40:14.648Z] Failed docker command with error  Request to https://us.gcr.io/v2/gif-to-video-2c4ce/gcf/us-central1/tags/list had HTTP Error: 404, Not Found {"name":"FirebaseError","children":[],"context":{"body":{"errors":[{"code":"NAME_UNKNOWN","message":"Repository \"us.gcr.io\" not found"}],"error":{"message":"Not Found"}},"response":{"statusCode":404}},"exit":1,"message":"Request to https://us.gcr.io/v2/gif-to-video-2c4ce/gcf/us-central1/tags/list had HTTP Error: 404, Not Found","status":404}
+[debug] [2024-12-25T01:40:14.749Z] Checked if tokens are valid: true, expires at: 1735094058093
+[debug] [2024-12-25T01:40:14.749Z] Checked if tokens are valid: true, expires at: 1735094058093
+[debug] [2024-12-25T01:40:14.749Z] >>> [apiv2][query] GET https://us.gcr.io/v2/gif-to-video-2c4ce/gcf/us-central1/tags/list [none]
+[debug] [2024-12-25T01:40:14.965Z] <<< [apiv2][status] GET https://us.gcr.io/v2/gif-to-video-2c4ce/gcf/us-central1/tags/list 404
+[debug] [2024-12-25T01:40:14.965Z] <<< [apiv2][body] GET https://us.gcr.io/v2/gif-to-video-2c4ce/gcf/us-central1/tags/list {"errors":[{"code":"NAME_UNKNOWN","message":"Repository \"us.gcr.io\" not found"}]}
+[debug] [2024-12-25T01:40:14.966Z] Failed docker command with error  Request to https://us.gcr.io/v2/gif-to-video-2c4ce/gcf/us-central1/tags/list had HTTP Error: 404, Not Found {"name":"FirebaseError","children":[],"context":{"body":{"errors":[{"code":"NAME_UNKNOWN","message":"Repository \"us.gcr.io\" not found"}],"error":{"message":"Not Found"}},"response":{"statusCode":404}},"exit":1,"message":"Request to https://us.gcr.io/v2/gif-to-video-2c4ce/gcf/us-central1/tags/list had HTTP Error: 404, Not Found","status":404}
+[warn] ⚠  functions: Unhandled error cleaning up build images. This could result in a small monthly bill if not corrected. You can attempt to delete these images by redeploying or you can delete them manually at https://console.cloud.google.com/gcr/images/gif-to-video-2c4ce/us/gcf 
+[debug] [2024-12-25T01:40:14.967Z] Functions deploy failed.
+[debug] [2024-12-25T01:40:14.967Z] {
+  "endpoint": {
+    "id": "on_request_example",
+    "project": "gif-to-video-2c4ce",
+    "region": "us-central1",
+    "entryPoint": "on_request_example",
+    "platform": "gcfv2",
+    "runtime": "python312",
+    "httpsTrigger": {},
+    "labels": {
+      "deployment-tool": "cli-firebase"
+    },
+    "secretEnvironmentVariables": [],
+    "ingressSettings": null,
+    "availableMemoryMb": null,
+    "serviceAccount": null,
+    "timeoutSeconds": null,
+    "maxInstances": null,
+    "minInstances": null,
+    "concurrency": 80,
+    "environmentVariables": {
+      "FIREBASE_CONFIG": "{\"projectId\":\"gif-to-video-2c4ce\",\"storageBucket\":\"gif-to-video-2c4ce.firebasestorage.app\"}",
+      "GCLOUD_PROJECT": "gif-to-video-2c4ce",
+      "EVENTARC_CLOUD_EVENT_SOURCE": "projects/gif-to-video-2c4ce/locations/us-central1/services/on_request_example"
+    },
+    "codebase": "default",
+    "cpu": 1,
+    "targetedByOnly": false,
+    "hash": "e993056391a517b7c11c75b19f16a5b0e8c41304"
+  },
+  "op": "create",
+  "original": {
+    "name": "FirebaseError",
+    "children": [],
+    "exit": 1,
+    "message": "Could not build the function. ",
+    "original": {
+      "code": 13,
+      "message": "Could not build the function. "
+    },
+    "status": 13,
+    "code": 13
+  }
+}
+[debug] [2024-12-25T01:40:15.054Z] Error: Failed to create function on_request_example in region us-central1
+    at /Users/gabriellulu/.nvm/versions/node/v18.20.3/lib/node_modules/firebase-tools/lib/deploy/functions/release/fabricator.js:294:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Fabricator.createV2Function (/Users/gabriellulu/.nvm/versions/node/v18.20.3/lib/node_modules/firebase-tools/lib/deploy/functions/release/fabricator.js:278:30)
+    at async Fabricator.createEndpoint (/Users/gabriellulu/.nvm/versions/node/v18.20.3/lib/node_modules/firebase-tools/lib/deploy/functions/release/fabricator.js:137:13)
+    at async handle (/Users/gabriellulu/.nvm/versions/node/v18.20.3/lib/node_modules/firebase-tools/lib/deploy/functions/release/fabricator.js:89:17)
+[error] 
+[error] Error: There was an error deploying functions
