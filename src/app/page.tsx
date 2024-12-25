@@ -1,5 +1,6 @@
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
+import InputVideo from "@/components/InputVideo";
 
 const Page = async ({
   searchParams,
@@ -12,6 +13,9 @@ const Page = async ({
         <h1>
           yo
         </h1>
+      </div>
+      <div>
+        <InputVideo/>
       </div>
 
     </div>
