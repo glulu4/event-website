@@ -1,21 +1,42 @@
-import React from 'react';
-import {InputNumber} from 'antd';
+import React from 'react'
+import {Field, Label} from './ui/fieldset'
+import {InputGroup} from './ui/input'
+import NumericInput from './NumberInput'
+import {User} from 'lucide-react'
 
 interface NumberOfPeopleInputProps {
-    value: number;
-    onChange: (value: number | null) => void;
+    value: number
+    onChange: (value: number) => void
 }
 
 const NumberOfPeopleInput = ({value, onChange}: NumberOfPeopleInputProps) => {
-    return (
-        <InputNumber
-            min={1}
-            placeholder="Number of People"
-            value={value}
-            onChange={onChange}
-            style={{width: '100%'}}
-        />
-    );
-};
+    const handleChange = (inputValue: string) => {
+        if (inputValue === '') {
+            onChange(0)
+            return
+        }
 
-export default NumberOfPeopleInput;
+        const numValue = Number(inputValue)
+        if (!isNaN(numValue) && numValue >= 0) {
+            onChange(numValue)
+        }
+
+    }
+
+    return (
+        <Field>
+            <Label>Number of People</Label>
+            <InputGroup>
+                <User data-slot="icon" />
+
+                <NumericInput
+                    value={value === 0 ? '' : value.toString()}
+                    onChange={handleChange}
+                    placeholder="Enter number of people"
+                />
+            </InputGroup>
+        </Field>
+    )
+}
+
+export default NumberOfPeopleInput

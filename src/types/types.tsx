@@ -5,3 +5,10 @@ export type EventFormData = {
     numberOfPeople: number;
     additionalDetails: string;
 }
+
+export type ActivityData = {
+    title: string;
+    activity: string;
+    address: string;
+    averageCost: string;
+}

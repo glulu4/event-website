@@ -20,6 +20,7 @@ import "dotenv/config";
 const ResponseFormat = z.object({
   response: z.array(
     z.object({
+      title: z.string(),
       activity: z.string(),
       address: z.string(),
       averageCost: z.string(),
@@ -36,8 +37,8 @@ export const generateEventIdea =
     const location: string = req.body.formData.location;
     const occasion: string = req.body.formData.occasion;
     const budget: number = req.body.formData.budget;
-    const numberOfPeople: number = req.body.formData.numberOfPeople;
-    const additionalDetails: string = req.body.formData.additionalDetails;
+    const numberOfPeople: number = req.body.formData.numberOfPeople || 2;
+    const additionalDetails: string = req.body.formData.additionalDetails || "";
     console.log("Request Input:", {
       location,
       occasion,
@@ -47,6 +48,7 @@ export const generateEventIdea =
     });
 
     const systemPrompt = `When responding, ensure your suggestions include:
+    - A title
     - A brief description of the activity or place.
     - An approximate address (must be real).
     - An average cost (e.g., per person or group).
@@ -54,6 +56,7 @@ export const generateEventIdea =
     {
     "response": [
         {
+        "title": "string"
         "activity": "string",
         "address": "string",
         "averageCost": "string",
@@ -63,7 +66,7 @@ export const generateEventIdea =
     Be sure to include several activities in the correct location.
     `;
 
-    const userPrompt = `Suggest activities for a ${occasion} in ${location} 
+    const userPrompt = `Suggest 10 activities for a ${occasion} in ${location} 
     for ${numberOfPeople} 
     people. 
     The activities should cost at most ${budget} dollars.

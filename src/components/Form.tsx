@@ -1,18 +1,19 @@
 "use client"
 import React, {useState} from 'react';
-import {Button, Form} from 'antd';
+import {Button, Form, message} from 'antd';
+import {useRouter} from 'next/navigation';
 import CityStateInput from './CityStateInput';
 import OccasionDropdown from './OccasionDrop';
-import FancyLevelSelector from './Budget';
+import Budget from './Budget';
 import NumberOfPeopleInput from './NumPeople';
 import AdditionalDetailsTextbox from './AdditionDetails';
-import {EventFormData} from '@/types/types';
-import Budget from './Budget';
+import {ActivityData, EventFormData} from '@/types/types';
+import {generateIdeas} from '@/app/api/generateIdea';
 
-interface ActivityFormProps {
-    onSubmit: (formData: EventFormData) => Promise<void>
-}
-const ActivityForm = ({onSubmit}: ActivityFormProps) => {
+const ActivityForm = () => {
+    const [isLoading, setIsLoading] = useState(false);
+    const router = useRouter();
+
     const [formData, setFormData] = useState<EventFormData>({
         location: '',
         occasion: undefined,
@@ -21,9 +22,26 @@ const ActivityForm = ({onSubmit}: ActivityFormProps) => {
         additionalDetails: '',
     });
 
+    const handleFormSubmit = async () => {
+        setIsLoading(true);
+
+        const ideas: ActivityData[] = await generateIdeas(formData);
+        
+        const jsonIdeas = encodeURIComponent(JSON.stringify(ideas));
+        const jsonFormData = encodeURIComponent(JSON.stringify(formData));
+    
+        setIsLoading(false);
+        console.log("ideas: ", ideas);
+        
+        // return;
+
+        router.push(`/ideas?data=${jsonIdeas}&formData=${jsonFormData}`);
+
+    };
+
     return (
-        <Form layout="vertical" onFinish={() => onSubmit(formData)}>
-            <Form.Item label="City and State">
+        <Form className="w-webkit-fill" layout="vertical" onFinish={handleFormSubmit}>
+            <Form.Item className="text-white text-xl">
                 <CityStateInput
                     value={formData.location}
                     onChange={(value) =>
@@ -31,15 +49,17 @@ const ActivityForm = ({onSubmit}: ActivityFormProps) => {
                     }
                 />
             </Form.Item>
-            <Form.Item label="Occasion">
+
+            <Form.Item>
                 <OccasionDropdown
-                    value={formData.occasion}
+                    value={formData.occasion || ""}
                     onChange={(value) =>
                         setFormData((prev) => ({...prev, occasion: value}))
                     }
                 />
             </Form.Item>
-            <Form.Item label="What's your budget?">
+
+            <Form.Item>
                 <Budget
                     value={formData.budget}
                     onChange={(value) =>
@@ -47,15 +67,17 @@ const ActivityForm = ({onSubmit}: ActivityFormProps) => {
                     }
                 />
             </Form.Item>
-            <Form.Item label="Number of People">
+
+            <Form.Item>
                 <NumberOfPeopleInput
                     value={formData.numberOfPeople}
                     onChange={(value) =>
-                        setFormData((prev) => ({...prev, numberOfPeople: value ?? 1}))
+                        setFormData((prev) => ({...prev, numberOfPeople: value}))
                     }
                 />
             </Form.Item>
-            <Form.Item label="Additional Details">
+
+            <Form.Item>
                 <AdditionalDetailsTextbox
                     value={formData.additionalDetails}
                     onChange={(value) =>
@@ -63,11 +85,19 @@ const ActivityForm = ({onSubmit}: ActivityFormProps) => {
                     }
                 />
             </Form.Item>
-            <Form.Item>
-                <Button type="primary" htmlType="submit">
-                    Generate Ideas
+
+            <Form.Item className="flex justify-center items-center">
+                <Button
+                    type="primary"
+                    htmlType="submit"
+                    loading={isLoading}
+                    disabled={isLoading}
+                    className="px-8 py-4 text-base"
+                >
+                    {isLoading ? 'Generating Ideas...' : 'Generate Ideas'}
                 </Button>
             </Form.Item>
+
         </Form>
     );
 };

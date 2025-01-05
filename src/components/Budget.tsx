@@ -1,6 +1,10 @@
 import React from 'react';
 import {InputNumber} from 'antd';
 import {isNumberObject} from 'util/types';
+import {Field, Label} from './ui/fieldset';
+import {InputGroup} from './ui/input';
+import {CircleDollarSign} from 'lucide-react';
+import NumericInput from './NumberInput';
 
 interface FancyLevelSelectorProps {
     value: number;
@@ -8,27 +12,32 @@ interface FancyLevelSelectorProps {
 }
 
 const Budget = ({value, onChange}: FancyLevelSelectorProps) => {
+    const handleChange = (inputValue: string) => {
+        if (inputValue === '') {
+            onChange(0)
+            return
+        }
+
+        const numValue = Number(inputValue)
+        if (!isNaN(numValue) && numValue >= 0) {
+            onChange(numValue)
+        }
+    }
+
     return (
-        <div>
-            <div style={{display: 'flex', alignItems: 'center', gap: '8px'}}>
-                <InputNumber
-                    prefix="$"
-                    id="fancy-level"
-                    min={1}
-                    max={1000} // Adjust the max value based on your use case
-                    value={value}
-                    onChange={(val) => {
-
-                        if (typeof(val) === 'number'){
-                            onChange(val)
-                        }
-
-                    }} 
-                    style={{width: '100%'}}
+        <Field>
+            <Label>Budget</Label>
+            <InputGroup>
+                <CircleDollarSign data-slot="icon" />
+                
+                <NumericInput
+                    value={value === 0 ? '' : value.toString()}
+                    onChange={handleChange}
+                    placeholder="Enter number of people"
                 />
-            </div>
-        </div>
-    );
+            </InputGroup>
+        </Field>
+    )
 };
 
 export default Budget;

@@ -1,0 +1,15 @@
+[
+  {
+    "slug": "new-york",
+    "name": "New York"
+  },
+  {
+    "slug": "san-francisco",
+    "name": "San Francisco"
+  },
+{
+    "slug": "philadelphia",
+    "name": "Philadelphia"
+  },
+   { "slug": "los-angeles", "name": "Los Angeles" }
+]

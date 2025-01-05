@@ -19,11 +19,22 @@ const config = {
       },
     },
     extend: {
+            width: {
+  'fill': 'fill-available',
+  'webkit-fill': '-webkit-fill-available',
+  'moz-fill': '-moz-available',
+},
+height: {
+  'fill': 'fill-available',
+  'webkit-fill': '-webkit-fill-available',
+  'moz-fill': '-moz-available',
+},
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
+        bodyBackground: "#ae2012",
         foreground: "hsl(var(--foreground))",
         primary: {
           DEFAULT: "hsl(var(--primary))",

@@ -8,7 +8,7 @@ import "./globals.css";
 import {Header} from "@/components/Header";
 import {Footer} from "@/components/Footer";
 import Providers from "@/components/theme-provider";
-
+import '@ant-design/v5-patch-for-react-19';
 const fontSans = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
 export const metadata: Metadata = {
@@ -38,7 +38,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          "min-h-screen bg-background font-sans antialiased max-w-6xl m-auto",
+          "min-h-screen font-sans antialiased max-w-6xl m-auto",
           fontSans.variable
         )}
       >
@@ -49,7 +49,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <main>
-            <Header />
+            {/* <Header /> */}
             {children}
             <Footer />
             </main>
