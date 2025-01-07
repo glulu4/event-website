@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: thingstogodo.com
+Host: https://www.thingstogodo.com
 
 # Sitemaps
-Sitemap: thingstogodo.com/sitemap.xml
+Sitemap: https://www.thingstogodo.com/sitemap.xml
