@@ -5,8 +5,6 @@ import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Inter, Inria_Serif } from "next/font/google";
 import "./globals.css";
-import {Header} from "@/components/Header";
-import {Footer} from "@/components/Footer";
 import Providers from "@/components/theme-provider";
 import '@ant-design/v5-patch-for-react-19';
 const fontSans = Inter({ subsets: ["latin"], variable: "--font-sans" });

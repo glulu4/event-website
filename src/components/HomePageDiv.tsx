@@ -1,7 +1,9 @@
 import React from 'react'
 import ReactRotatingText from './ReactRotatingText'
 import {options} from '@/types/types'
-import {Button} from './ui/button'
+
+import Link from 'next/link';
+import Image from 'next/image';
 
 
 
@@ -47,9 +49,16 @@ export default function HomePageDiv({city}: HomePageDivProps) {
                       </p>
                   </div>
                   <div className="pt-20">
-                      <Button type="button" color="blue" href="/form">
-                          Generate Ideas
-                      </Button>
+                      <button
+                          className="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors disabled:bg-blue-400"
+
+                      >
+                          <Link href='/form'>
+                              Generate Ideas
+                          </Link>
+
+
+                      </button>
                   </div>
 
               </main>
@@ -61,6 +70,7 @@ export default function HomePageDiv({city}: HomePageDivProps) {
                   src="/images/golf.jpg"
                   alt="Golfing"
                   className="absolute inset-0 w-full h-full object-cover"
+                  
               />
 
           </div>

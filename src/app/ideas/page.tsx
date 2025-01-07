@@ -1,6 +1,6 @@
 
 "use client"
-import React, {useEffect, useState} from 'react';
+import React, {Suspense, useEffect, useState} from 'react';
 import {useRouter, useSearchParams} from 'next/navigation';
 import {Banknote, MapPin, Loader2} from 'lucide-react';
 import {message} from 'antd';
@@ -63,6 +63,7 @@ const Page = () => {
     };
 
     return (
+        <Suspense fallback={<Loader2 className="h-6 w-6 animate-spin" />}>
         <div className="container mx-auto px-4 py-8">
             <div className="flex justify-between items-center mb-6">
                 <h1 className="text-2xl font-semibold text-gray-800 dark:text-white">
@@ -100,6 +101,7 @@ const Page = () => {
                 ))}
             </div>
         </div>
+        </Suspense>
     );
 };
 
