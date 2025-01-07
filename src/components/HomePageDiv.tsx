@@ -42,11 +42,11 @@ export default function HomePageDiv({city}: HomePageDivProps) {
                           to your interests and budget.
                       </p>
 
-                      <p className="mt-12 text-lg leading-relaxed">
+                      {/* <p className="mt-12 text-lg leading-relaxed">
                           From scenic parks and local eateries to nightlife hotspots and cultural experiences, discover
                           personalized recommendations for every occasion. Perfect for date nights, casual hangouts,
                           or special celebrations, our smart suggestions ensure you&apos;ll never run out of ideas.
-                      </p>
+                      </p> */}
                   </div>
                   <div className="py-20">
                       <button
