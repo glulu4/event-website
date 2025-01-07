@@ -12,3 +12,25 @@ export type ActivityData = {
     address: string;
     averageCost: string;
 }
+export const options = [
+    'Casual Hangout',
+    'Date Night',
+    'Lunch',
+    'Dinner',
+    'First Date',
+    'Family Outing',
+    'Business Meeting',
+    'Interview',
+    'Celebration',
+    'Weekend Getaway',
+    'Outdoor Adventure',
+    'Relaxation',
+    'Shopping Spree',
+    'Foodie Tour',
+    'Cultural Experience',
+    'Fitness Activity',
+    'Romantic Escape',
+    'Nightlife',
+    'Solo Adventure',
+    'Volunteer Opportunity',
+];

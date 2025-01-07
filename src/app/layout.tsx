@@ -3,13 +3,20 @@ import { config } from "@/config";
 import { signOgImageUrl } from "@/lib/og-image";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Inria_Serif } from "next/font/google";
 import "./globals.css";
 import {Header} from "@/components/Header";
 import {Footer} from "@/components/Footer";
 import Providers from "@/components/theme-provider";
 import '@ant-design/v5-patch-for-react-19';
 const fontSans = Inter({ subsets: ["latin"], variable: "--font-sans" });
+
+const fontSerif = Inria_Serif({
+  weight:["300", "400", "700"],
+  subsets: ["latin"], 
+  variable: "--font-serif"
+});
+
 
 export const metadata: Metadata = {
   title: {
@@ -38,8 +45,9 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          "min-h-screen font-sans antialiased max-w-6xl m-auto",
-          fontSans.variable
+          "min-h-screen font-sans antialiased m-auto",
+          fontSans.variable,
+          fontSerif.variable
         )}
       >
         <Providers
@@ -51,7 +59,7 @@ export default function RootLayout({
           <main>
             {/* <Header /> */}
             {children}
-            <Footer />
+            {/* <Footer /> */}
             </main>
         </Providers>
       </body>

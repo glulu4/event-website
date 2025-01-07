@@ -7,9 +7,440 @@
     "slug": "san-francisco",
     "name": "San Francisco"
   },
-{
+  {
     "slug": "philadelphia",
     "name": "Philadelphia"
   },
-   { "slug": "los-angeles", "name": "Los Angeles" }
+  {
+    "slug": "los-angeles",
+    "name": "Los Angeles"
+  },
+  {
+    "slug": "chicago",
+    "name": "Chicago"
+  },
+  {
+    "slug": "houston",
+    "name": "Houston"
+  },
+  {
+    "slug": "phoenix",
+    "name": "Phoenix"
+  },
+  {
+    "slug": "san-antonio",
+    "name": "San Antonio"
+  },
+  {
+    "slug": "san-diego",
+    "name": "San Diego"
+  },
+  {
+    "slug": "dallas",
+    "name": "Dallas"
+  },
+  {
+    "slug": "austin",
+    "name": "Austin"
+  },
+  {
+    "slug": "seattle",
+    "name": "Seattle"
+  },
+  {
+    "slug": "denver",
+    "name": "Denver"
+  },
+  {
+    "slug": "boston",
+    "name": "Boston"
+  },
+  {
+    "slug": "miami",
+    "name": "Miami"
+  },
+  {
+    "slug": "atlanta",
+    "name": "Atlanta"
+  },
+  {
+    "slug": "portland",
+    "name": "Portland"
+  },
+  {
+    "slug": "las-vegas",
+    "name": "Las Vegas"
+  },
+  {
+    "slug": "nashville",
+    "name": "Nashville"
+  },
+  {
+    "slug": "new-orleans",
+    "name": "New Orleans"
+  },
+  {
+    "slug": "minneapolis",
+    "name": "Minneapolis"
+  },
+  {
+    "slug": "salt-lake-city",
+    "name": "Salt Lake City"
+  },
+  {
+    "slug": "sacramento",
+    "name": "Sacramento"
+  },
+  {
+    "slug": "orlando",
+    "name": "Orlando"
+  },
+  {
+    "slug": "charlotte",
+    "name": "Charlotte"
+  },
+  {
+    "slug": "san-jose",
+    "name": "San Jose"
+  },
+  {
+    "slug": "raleigh",
+    "name": "Raleigh"
+  },
+  {
+    "slug": "tampa",
+    "name": "Tampa"
+  },
+  {
+    "slug": "pittsburgh",
+    "name": "Pittsburgh"
+  },
+  {
+    "slug": "cleveland",
+    "name": "Cleveland"
+  },
+  {
+    "slug": "cincinnati",
+    "name": "Cincinnati"
+  },
+  {
+    "slug": "kansas-city",
+    "name": "Kansas City"
+  },
+  {
+    "slug": "st-louis",
+    "name": "St. Louis"
+  },
+  {
+    "slug": "indianapolis",
+    "name": "Indianapolis"
+  },
+  {
+    "slug": "columbus",
+    "name": "Columbus"
+  },
+  {
+    "slug": "fort-worth",
+    "name": "Fort Worth"
+  },
+  {
+    "slug": "memphis",
+    "name": "Memphis"
+  },
+  {
+    "slug": "detroit",
+    "name": "Detroit"
+  },
+  {
+    "slug": "baltimore",
+    "name": "Baltimore"
+  },
+  {
+    "slug": "albuquerque",
+    "name": "Albuquerque"
+  },
+  {
+    "slug": "tucson",
+    "name": "Tucson"
+  },
+  {
+    "slug": "fresno",
+    "name": "Fresno"
+  },
+  {
+    "slug": "jacksonville",
+    "name": "Jacksonville"
+  },
+  {
+    "slug": "oklahoma-city",
+    "name": "Oklahoma City"
+  },
+  {
+    "slug": "omaha",
+    "name": "Omaha"
+  },
+  {
+    "slug": "richmond",
+    "name": "Richmond"
+  },
+  {
+    "slug": "buffalo",
+    "name": "Buffalo"
+  },
+  {
+    "slug": "rochester",
+    "name": "Rochester"
+  },
+  {
+    "slug": "boise",
+    "name": "Boise"
+  },
+  {
+    "slug": "milwaukee",
+    "name": "Milwaukee"
+  },
+  {
+    "slug": "louisville",
+    "name": "Louisville"
+  },
+  {
+    "slug": "fort-lauderdale",
+    "name": "Fort Lauderdale"
+  },
+  {
+    "slug": "providence",
+    "name": "Providence"
+  },
+  {
+    "slug": "tulsa",
+    "name": "Tulsa"
+  },
+  {
+    "slug": "honolulu",
+    "name": "Honolulu"
+  },
+  {
+    "slug": "long-beach",
+    "name": "Long Beach"
+  },
+  {
+    "slug": "colorado-springs",
+    "name": "Colorado Springs"
+  },
+  {
+    "slug": "virginia-beach",
+    "name": "Virginia Beach"
+  },
+  {
+    "slug": "reno",
+    "name": "Reno"
+  },
+  {
+    "slug": "spokane",
+    "name": "Spokane"
+  },
+  {
+    "slug": "madison",
+    "name": "Madison"
+  },
+  {
+    "slug": "baton-rouge",
+    "name": "Baton Rouge"
+  },
+  {
+    "slug": "new-haven",
+    "name": "New Haven"
+  },
+  {
+    "slug": "durham",
+    "name": "Durham"
+  },
+  {
+    "slug": "fort-myers",
+    "name": "Fort Myers"
+  },
+  {
+    "slug": "charleston",
+    "name": "Charleston"
+  },
+  {
+    "slug": "knoxville",
+    "name": "Knoxville"
+  },
+  {
+    "slug": "des-moines",
+    "name": "Des Moines"
+  },
+  {
+    "slug": "huntsville",
+    "name": "Huntsville"
+  },
+  {
+    "slug": "little-rock",
+    "name": "Little Rock"
+  },
+  {
+    "slug": "chattanooga",
+    "name": "Chattanooga"
+  },
+  {
+    "slug": "spokane-valley",
+    "name": "Spokane Valley"
+  },
+  {
+    "slug": "savannah",
+    "name": "Savannah"
+  },
+  {
+    "slug": "syracuse",
+    "name": "Syracuse"
+  },
+  {
+    "slug": "columbia",
+    "name": "Columbia"
+  },
+  {
+    "slug": "dayton",
+    "name": "Dayton"
+  },
+  {
+    "slug": "charleston-sc",
+    "name": "Charleston SC"
+  },
+  {
+    "slug": "palm-springs",
+    "name": "Palm Springs"
+  },
+  {
+    "slug": "santa-fe",
+    "name": "Santa Fe"
+  },
+  {
+    "slug": "asheville",
+    "name": "Asheville"
+  },
+  {
+    "slug": "eugene",
+    "name": "Eugene"
+  },
+  {
+    "slug": "ann-arbor",
+    "name": "Ann Arbor"
+  },
+  {
+    "slug": "gainesville",
+    "name": "Gainesville"
+  },
+  {
+    "slug": "fort-collins",
+    "name": "Fort Collins"
+  },
+    {
+    "slug": "boulder",
+    "name": "Boulder"
+  },
+  {
+    "slug": "salem",
+    "name": "Salem"
+  },
+  {
+    "slug": "bend",
+    "name": "Bend"
+  },
+  {
+    "slug": "olympia",
+    "name": "Olympia"
+  },
+  {
+    "slug": "wilmington",
+    "name": "Wilmington"
+  },
+  {
+    "slug": "tallahassee",
+    "name": "Tallahassee"
+  },
+  {
+    "slug": "santa-cruz",
+    "name": "Santa Cruz"
+  },
+  {
+    "slug": "bellingham",
+    "name": "Bellingham"
+  },
+  {
+    "slug": "missoula",
+    "name": "Missoula"
+  },
+  {
+    "slug": "burlington",
+    "name": "Burlington"
+  },
+  {
+    "slug": "jackson",
+    "name": "Jackson"
+  },
+  {
+    "slug": "flagstaff",
+    "name": "Flagstaff"
+  },
+  {
+    "slug": "charleston-wv",
+    "name": "Charleston WV"
+  },
+  {
+    "slug": "myrtle-beach",
+    "name": "Myrtle Beach"
+  },
+  {
+    "slug": "key-west",
+    "name": "Key West"
+  },
+  {
+    "slug": "juneau",
+    "name": "Juneau"
+  },
+  {
+    "slug": "sedona",
+    "name": "Sedona"
+  },
+  {
+    "slug": "park-city",
+    "name": "Park City"
+  },
+  {
+    "slug": "lake-tahoe",
+    "name": "Lake Tahoe"
+  },
+  {
+    "slug": "napa",
+    "name": "Napa"
+  },
+  {
+    "slug": "monterey",
+    "name": "Monterey"
+  },
+  {
+    "slug": "aspen",
+    "name": "Aspen"
+  },
+  {
+    "slug": "telluride",
+    "name": "Telluride"
+  },
+  {
+    "slug": "newport",
+    "name": "Newport"
+  },
+  {
+    "slug": "palm-beach",
+    "name": "Palm Beach"
+  },
+  {
+    "slug": "martha's-vineyard",
+    "name": "Martha's Vineyard"
+  },
+  {
+    "slug": "cape-cod",
+    "name": "Cape Cod"
+  }
 ]

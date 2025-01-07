@@ -1,7 +1,10 @@
 import {Metadata} from "next";
 import cities from "../../../public/cities.json";
-import Link from "next/link";
+import {options} from "@/types/types";
 
+import ReactRotatingText from "@/components/ReactRotatingText";
+import {Button} from "@/components/ui/button";
+import HomePageDiv from "@/components/HomePageDiv";
 interface CityPageProps {
     params: {city: string};
 }
@@ -28,20 +31,13 @@ export async function generateStaticParams() {
 export default function CityPage({params}: CityPageProps) {
     const city = cities.find((c) => c.slug === params.city);
 
+
     if (!city) {
         return <div className="text-center mt-10">City not found</div>;
     }
 
     return (
-        <div className="container mx-auto px-5 mb-10">
-            <h1 className="text-2xl font-bold text-center mt-10">Event Ideas in {city.name}</h1>
-            <p className="text-center mt-2">{seoText}</p>
+        <HomePageDiv city={city.name}/>
 
-            <Link href="/form">
-            <button>
-                Click
-            </button>
-            </Link>
-        </div>
     );
 }

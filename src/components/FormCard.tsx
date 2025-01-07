@@ -7,7 +7,7 @@ export default function FormCard() {
           <div className="text-center mb-6">
 
           </div>
-          <div className="w-full max-w-md bg-white dark:bg-gray-900 p-16 rounded-lg shadow-lg">
+          <div className="w-full max-w-md bg-slate-100 dark:bg-gray-900 p-16 rounded-lg shadow-lg">
               <ActivityForm />
           </div>
       </div>
