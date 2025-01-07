@@ -39,6 +39,7 @@
 import {Metadata} from "next";
 import cities from "../../../public/cities.json";
 import HomePageDiv from "@/components/HomePageDiv";
+import {notFound, redirect} from "next/navigation";
 
 type Params = Promise<{city: string}>;
 
@@ -58,6 +59,10 @@ export async function generateMetadata({
     const resolvedParams = await params; // Await the params
     const city = cities.find((c) => c.slug === resolvedParams.city);
     const cityName = city ? city.name : "City Not Found";
+
+    if (cityName == "City Not Found"){
+        notFound()
+    }
 
     return {
         title: city ? `Event Ideas in ${cityName} | Your Website` : "City Not Found | Your Website",
