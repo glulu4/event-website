@@ -28,7 +28,7 @@ export default function HomePageDiv({city}: HomePageDivProps) {
 
                   <div className="mt-12 text-gray-600">
                       <div>
-                          <h2 className="text-4xl"> Use AI for your&nbsp;
+                          <h2 className="text-4xl"> Use AI plan for your&nbsp;
                               <ReactRotatingText color="royalblue" items={options} />
 
                           </h2>
@@ -48,7 +48,7 @@ export default function HomePageDiv({city}: HomePageDivProps) {
                           or special celebrations, our smart suggestions ensure you&apos;ll never run out of ideas.
                       </p>
                   </div>
-                  <div className="pt-20">
+                  <div className="py-20">
                       <button
                           className="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors disabled:bg-blue-400"
 
