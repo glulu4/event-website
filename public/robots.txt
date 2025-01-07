@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: thingstogodo.com
+
+# Sitemaps
+Sitemap: thingstogodo.com/sitemap.xml
