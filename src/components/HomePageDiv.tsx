@@ -3,6 +3,8 @@ import ReactRotatingText from './ReactRotatingText'
 import {options} from '@/types/types'
 import {Button} from './ui/button'
 
+
+
 interface HomePageDivProps {
     city?: string;
 }
