@@ -1,6 +1,6 @@
+import '../../envConfig'
 import {ActivityData, EventFormData} from "@/types/types";
-
-const apiUrl = process.env.NEXT_PUBLIC_GENERATE_IDEA_URL;
+const apiUrl = process.env.GENERATE_IDEA_URL!;
 
 export async function generateIdeas(formData: EventFormData): Promise<ActivityData[]> {
     const payload = {formData};

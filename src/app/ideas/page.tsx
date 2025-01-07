@@ -8,6 +8,7 @@ import {ActivityData, EventFormData} from '@/types/types';
 import {generateIdeas} from '../api/generateIdea';
 import ActivityCard from '@/components/ActivityCard';
 import Link from 'next/link';
+import {generateIdeasViaProxy} from '../api/generateIdeasProxy';
 
 
 const Page = () => {
@@ -45,7 +46,7 @@ const Page = () => {
     const handleRegenerateIdeas = async () => {
         try {
             setIsLoading(true);
-            const ideas: ActivityData[] = await generateIdeas(originalForm);
+            const ideas: ActivityData[] = await generateIdeasViaProxy(originalForm);
             
             const newActivityList = [...activities, ...ideas]
             setActivities(newActivityList);

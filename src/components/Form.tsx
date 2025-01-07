@@ -9,6 +9,7 @@ import NumberOfPeopleInput from './NumPeople';
 import AdditionalDetailsTextbox from './AdditionDetails';
 import {ActivityData, EventFormData} from '@/types/types';
 import {generateIdeas} from '@/app/api/generateIdea';
+import {generateIdeasViaProxy} from '@/app/api/generateIdeasProxy';
 
 const ActivityForm = () => {
     const [isLoading, setIsLoading] = useState(false);
@@ -25,7 +26,7 @@ const ActivityForm = () => {
     const handleFormSubmit = async () => {
         setIsLoading(true);
 
-        const ideas: ActivityData[] = await generateIdeas(formData);
+        const ideas: ActivityData[] = await generateIdeasViaProxy(formData);
         
         const jsonIdeas = encodeURIComponent(JSON.stringify(ideas));
         const jsonFormData = encodeURIComponent(JSON.stringify(formData));
