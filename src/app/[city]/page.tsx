@@ -19,13 +19,34 @@ export async function generateMetadata({
     const city = cities.find((c) => c.slug === resolvedParams.city);
     const cityName = city ? city.name : "City Not Found";
 
-    if (cityName == "City Not Found"){
+    if (!city || cityName == "City Not Found"){
         notFound()
     }
 
     return {
         title: `Things to do in ${cityName} | Fun things to do in ${cityName}`,
         description: `Looking for things to do in ${cityName}? Discover the best event ideas, fun activities, and local attractions. Explore top spots, hidden gems, and free things to do in ${cityName} today!`,
+        openGraph: {
+            title: `Fun Things to Do in ${cityName} | Things to do in ${cityName}`,
+            description: `Find new things to do near you. Plan the best activities, events, and attractions in ${cityName}. Explore top-rated things to do and hidden gems in ${cityName}`,
+            url: `https://www.thingstogodo.com/${city.slug}`,
+            siteName: "Things to Go Do",
+            images: [
+                {
+                    url: "https://www.thingstogodo.com/images/og-image.jpg",
+                    width: 1200,
+                    height: 630,
+                    alt: `Things to do in ${cityName}`,
+                },
+            ],
+            type: "website",
+        },
+        twitter: {
+            card: "summary_large_image",
+            title: `Fun Things to Do in ${cityName} | Things to do in ${cityName}`,
+            description: "Explore top-rated activities, events, and attractions near you.",
+            images: ["https://www.thingstogodo.com/images/og-image.jpg"],
+        },
     };
 }
 

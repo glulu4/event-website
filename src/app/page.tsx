@@ -5,7 +5,7 @@ import HomePageDiv from "@/components/HomePageDiv";
 
 // Metadata for SEO
 export const metadata: Metadata = {
-  title: "Discover Fun Things to Do | Things to Go Do",
+  title: "Find Fun Things to Do | Things to Go Do",
   description: "Find the best activities, events, and attractions near you. Discover top-rated things to do and hidden gems in your city with Things to Go Do.",
   openGraph: {
     title: "Discover Fun Things to Do | Things to Go Do",
