@@ -3,9 +3,7 @@
 import React, {Suspense, useEffect, useState} from 'react';
 import {useRouter, useSearchParams} from 'next/navigation';
 import {Banknote, MapPin, Loader2} from 'lucide-react';
-import {message} from 'antd';
 import {ActivityData, EventFormData} from '@/types/types';
-import {generateIdeas} from '../api/generateIdea';
 import ActivityCard from '@/components/ActivityCard';
 import Link from 'next/link';
 import {generateIdeasViaProxy} from '../api/generateIdeasProxy';
