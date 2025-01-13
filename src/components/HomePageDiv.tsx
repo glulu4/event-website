@@ -9,10 +9,15 @@ import Image from 'next/image';
 
 interface HomePageDivProps {
     city?: string;
+    bored?:boolean;
 }
 
-export default function HomePageDiv({city}: HomePageDivProps) {
+export default function HomePageDiv({city, bored}: HomePageDivProps) {
 
+    let additionalText = ""
+    if (bored){
+        additionalText = " when you're bored"
+    }
     if (!city){
         city = "your area"
     }
@@ -23,7 +28,7 @@ export default function HomePageDiv({city}: HomePageDivProps) {
 
               <main>
                   <h1 className="text-6xl font-serif font-bold mb-6">
-                      Discover things to do in {city}
+                      Discover things to do in {city} {additionalText}
                   </h1>
 
                   <div className="mt-12 text-gray-600">

@@ -1,5 +1,5 @@
 import {Metadata} from "next";
-import cities from "../../../public/cities.json";
+import cities from "../../../../public/cities.json";
 import HomePageDiv from "@/components/HomePageDiv";
 import {notFound, redirect} from "next/navigation";
 
@@ -64,5 +64,5 @@ export default async function CityPage({params}: CityPageProps) {
         redirect("/")
     }
 
-    return <HomePageDiv city={city.name} />;
+    return <HomePageDiv city={city.name} bored />;
 }
