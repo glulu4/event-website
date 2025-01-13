@@ -442,5 +442,649 @@
   {
     "slug": "cape-cod",
     "name": "Cape Cod"
+  },
+  {
+    "slug": "oklahoma-city",
+    "name": "Oklahoma City"
+  },
+  {
+    "slug": "wichita",
+    "name": "Wichita"
+  },
+  {
+    "slug": "el-paso",
+    "name": "El Paso"
+  },
+  {
+    "slug": "mesa",
+    "name": "Mesa"
+  },
+  {
+    "slug": "arlington",
+    "name": "Arlington"
+  },
+  {
+    "slug": "corpus-christi",
+    "name": "Corpus Christi"
+  },
+  {
+    "slug": "plano",
+    "name": "Plano"
+  },
+  {
+    "slug": "irvine",
+    "name": "Irvine"
+  },
+  {
+    "slug": "stockton",
+    "name": "Stockton"
+  },
+  {
+    "slug": "anaheim",
+    "name": "Anaheim"
+  },
+  {
+    "slug": "santa-ana",
+    "name": "Santa Ana"
+  },
+  {
+    "slug": "riverside",
+    "name": "Riverside"
+  },
+  {
+    "slug": "st-petersburg",
+    "name": "St. Petersburg"
+  },
+  {
+    "slug": "chula-vista",
+    "name": "Chula Vista"
+  },
+  {
+    "slug": "toledo",
+    "name": "Toledo"
+  },
+  {
+    "slug": "fort-wayne",
+    "name": "Fort Wayne"
+  },
+  {
+    "slug": "chandler",
+    "name": "Chandler"
+  },
+  {
+    "slug": "scottsdale",
+    "name": "Scottsdale"
+  },
+  {
+    "slug": "aurora",
+    "name": "Aurora"
+  },
+  {
+    "slug": "glendale",
+    "name": "Glendale"
+  },
+  {
+    "slug": "garland",
+    "name": "Garland"
+  },
+  {
+    "slug": "hialeah",
+    "name": "Hialeah"
+  },
+  {
+    "slug": "lubbock",
+    "name": "Lubbock"
+  },
+  {
+    "slug": "winston-salem",
+    "name": "Winston-Salem"
+  },
+  {
+    "slug": "norfolk",
+    "name": "Norfolk"
+  },
+  {
+    "slug": "irving",
+    "name": "Irving"
+  },
+  {
+    "slug": "laredo",
+    "name": "Laredo"
+  },
+  {
+    "slug": "durham",
+    "name": "Durham"
+  },
+  {
+    "slug": "madison",
+    "name": "Madison"
+  },
+  {
+    "slug": "shreveport",
+    "name": "Shreveport"
+  },
+  {
+    "slug": "chesapeake",
+    "name": "Chesapeake"
+  },
+  {
+    "slug": "mobile",
+    "name": "Mobile"
+  },
+  {
+    "slug": "montgomery",
+    "name": "Montgomery"
+  },
+  {
+    "slug": "augusta",
+    "name": "Augusta"
+  },
+  {
+    "slug": "amarillo",
+    "name": "Amarillo"
+  },
+  {
+    "slug": "grand-rapids",
+    "name": "Grand Rapids"
+  },
+  {
+    "slug": "little-rock",
+    "name": "Little Rock"
+  },
+  {
+    "slug": "akron",
+    "name": "Akron"
+  },
+  {
+    "slug": "yonkers",
+    "name": "Yonkers"
+  },
+  {
+    "slug": "huntington-beach",
+    "name": "Huntington Beach"
+  },
+  {
+    "slug": "modesto",
+    "name": "Modesto"
+  },
+  {
+    "slug": "san-luis-obispo",
+    "name": "San Luis Obispo"
+  },
+  {
+    "slug": "santa-barbara",
+    "name": "Santa Barbara"
+  },
+  {
+    "slug": "carmel-by-the-sea",
+    "name": "Carmel-by-the-Sea"
+  },
+  {
+    "slug": "palo-alto",
+    "name": "Palo Alto"
+  },
+  {
+    "slug": "berkeley",
+    "name": "Berkeley"
+  },
+  {
+    "slug": "newport-beach",
+    "name": "Newport Beach"
+  },
+  {
+    "slug": "laguna-beach",
+    "name": "Laguna Beach"
+  },
+  {
+    "slug": "malibu",
+    "name": "Malibu"
+  },
+  {
+    "slug": "santa-monica",
+    "name": "Santa Monica"
+  },
+  {
+    "slug": "palm-desert",
+    "name": "Palm Desert"
+  },
+  {
+    "slug": "vail",
+    "name": "Vail"
+  },
+  {
+    "slug": "breckenridge",
+    "name": "Breckenridge"
+  },
+  {
+    "slug": "steamboat-springs",
+    "name": "Steamboat Springs"
+  },
+  {
+    "slug": "jackson-hole",
+    "name": "Jackson Hole"
+  },
+  {
+    "slug": "hilton-head",
+    "name": "Hilton Head"
+  },
+  {
+    "slug": "outer-banks",
+    "name": "Outer Banks"
+  },
+  {
+    "slug": "bar-harbor",
+    "name": "Bar Harbor"
+  },
+  {
+    "slug": "newport-ri",
+    "name": "Newport RI"
+  },
+  {
+    "slug": "nantucket",
+    "name": "Nantucket"
+  },
+  {
+    "slug": "kennebunkport",
+    "name": "Kennebunkport"
+  },
+  {
+    "slug": "provincetown",
+    "name": "Provincetown"
+  },
+  {
+    "slug": "saratoga-springs",
+    "name": "Saratoga Springs"
+  },
+  {
+    "slug": "lake-placid",
+    "name": "Lake Placid"
+  },
+  {
+    "slug": "woodstock",
+    "name": "Woodstock"
+  },
+  {
+    "slug": "hamptons",
+    "name": "The Hamptons"
+  },
+  {
+    "slug": "ocean-city",
+    "name": "Ocean City"
+  },
+  {
+    "slug": "rehoboth-beach",
+    "name": "Rehoboth Beach"
+  },
+  {
+    "slug": "atlantic-city",
+    "name": "Atlantic City"
+  },
+  {
+    "slug": "virginia-beach",
+    "name": "Virginia Beach"
+  },
+  {
+    "slug": "gulf-shores",
+    "name": "Gulf Shores"
+  },
+  {
+    "slug": "destin",
+    "name": "Destin"
+  },
+  {
+    "slug": "panama-city-beach",
+    "name": "Panama City Beach"
+  },
+  {
+    "slug": "clearwater",
+    "name": "Clearwater"
+  },
+  {
+    "slug": "naples",
+    "name": "Naples"
+  },
+  {
+    "slug": "sarasota",
+    "name": "Sarasota"
+  },
+  {
+    "slug": "siesta-key",
+    "name": "Siesta Key"
+  },
+  {
+    "slug": "marco-island",
+    "name": "Marco Island"
+  },
+  {
+    "slug": "sanibel-island",
+    "name": "Sanibel Island"
+  },
+  {
+    "slug": "amelia-island",
+    "name": "Amelia Island"
+  },
+  {
+    "slug": "st-augustine",
+    "name": "St. Augustine"
+  },
+  {
+    "slug": "palm-springs",
+    "name": "Palm Springs"
+  },
+  {
+    "slug": "joshua-tree",
+    "name": "Joshua Tree"
+  },
+  {
+    "slug": "death-valley",
+    "name": "Death Valley"
+  },
+  {
+    "slug": "yosemite",
+    "name": "Yosemite"
+  },
+  {
+    "slug": "yellowstone",
+    "name": "Yellowstone"
+  },
+  {
+    "slug": "grand-canyon",
+    "name": "Grand Canyon"
+  },
+  {
+    "slug": "zion",
+    "name": "Zion"
+  },
+  {
+    "slug": "moab",
+    "name": "Moab"
+  },
+  {
+    "slug": "branson",
+    "name": "Branson"
+  },
+  {
+    "slug": "gatlinburg",
+    "name": "Gatlinburg"
+  },
+  {
+    "slug": "pigeon-forge",
+    "name": "Pigeon Forge"
+  },
+  {
+    "slug": "mammoth-lakes",
+    "name": "Mammoth Lakes"
+  },
+  {
+    "slug": "big-sur",
+    "name": "Big Sur"
+  },
+  {
+    "slug": "lake-geneva",
+    "name": "Lake Geneva"
+  },
+  {
+    "slug": "mackinac-island",
+    "name": "Mackinac Island"
+  },
+  {
+    "slug": "traverse-city",
+    "name": "Traverse City"
+  },
+  {
+    "slug": "door-county",
+    "name": "Door County"
+  },
+  {
+    "slug": "rapid-city",
+    "name": "Rapid City"
+  },
+  {
+    "slug": "deadwood",
+    "name": "Deadwood"
+  },
+  {
+    "slug": "stowe",
+    "name": "Stowe"
+  },
+  {
+    "slug": "white-mountains",
+    "name": "White Mountains"
+  },
+  {
+    "slug": "lancaster",
+    "name": "Lancaster"
+  },
+  {
+    "slug": "gettysburg",
+    "name": "Gettysburg"
+  },
+  {
+    "slug": "williamsburg",
+    "name": "Williamsburg"
+  },
+  {
+    "slug": "alexandria",
+    "name": "Alexandria"
+  },
+  {
+    "slug": "annapolis",
+    "name": "Annapolis"
+  },
+  {
+    "slug": "princeton",
+    "name": "Princeton"
+  },
+  {
+    "slug": "greenwich",
+    "name": "Greenwich"
+  },
+  {
+    "slug": "taos",
+    "name": "Taos"
+  },
+  {
+    "slug": "durango",
+    "name": "Durango"
+  },
+  {
+    "slug": "park-city",
+    "name": "Park City"
+  },
+  {
+    "slug": "big-sky",
+    "name": "Big Sky"
+  },
+  {
+    "slug": "whitefish",
+    "name": "Whitefish"
+  },
+  {
+    "slug": "kailua-kona",
+    "name": "Kailua-Kona"
+  },
+  {
+    "slug": "lahaina",
+    "name": "Lahaina"
+  },
+  {
+    "slug": "kaanapali",
+    "name": "Ka'anapali"
+  },
+  {
+    "slug": "wailea",
+    "name": "Wailea"
+  },
+  {
+    "slug": "poipu",
+    "name": "Poipu"
+  },
+  {
+    "slug": "sonoma",
+    "name": "Sonoma"
+  },
+  {
+    "slug": "healdsburg",
+    "name": "Healdsburg"
+  },
+  {
+    "slug": "st-helena",
+    "name": "St. Helena"
+  },
+  {
+    "slug": "calistoga",
+    "name": "Calistoga"
+  },
+  {
+    "slug": "solvang",
+    "name": "Solvang"
+  },
+  {
+    "slug": "ojai",
+    "name": "Ojai"
+  },
+  {
+    "slug": "capitola",
+    "name": "Capitola"
+  },
+  {
+    "slug": "half-moon-bay",
+    "name": "Half Moon Bay"
+  },
+  {
+    "slug": "sausalito",
+    "name": "Sausalito"
+  },
+  {
+    "slug": "tiburon",
+    "name": "Tiburon"
+  },
+  {
+    "slug": "mill-valley",
+    "name": "Mill Valley"
+  },
+  {
+    "slug": "bozeman",
+    "name": "Bozeman"
+  },
+  {
+    "slug": "coeur-dalene",
+    "name": "Coeur d'Alene"
+  },
+  {
+    "slug": "lake-powell",
+    "name": "Lake Powell"
+  },
+  {
+    "slug": "bryce-canyon",
+    "name": "Bryce Canyon"
+  },
+  {
+    "slug": "arches",
+    "name": "Arches"
+  },
+  {
+    "slug": "mount-rushmore",
+    "name": "Mount Rushmore"
+  },
+  {
+    "slug": "acadia",
+    "name": "Acadia"
+  },
+  {
+    "slug": "glacier",
+    "name": "Glacier"
+  },
+  {
+    "slug": "olympic",
+    "name": "Olympic"
+  },
+  {
+    "slug": "mount-rainier",
+    "name": "Mount Rainier"
+  },
+  {
+    "slug": "everglades",
+    "name": "Everglades"
+  },
+  {
+    "slug": "shenandoah",
+    "name": "Shenandoah"
+  },
+  {
+    "slug": "great-smoky-mountains",
+    "name": "Great Smoky Mountains"
+  },
+  {
+    "slug": "sequoia",
+    "name": "Sequoia"
+  },
+  {
+    "slug": "redwood",
+    "name": "Redwood"
+  },
+  {
+    "slug": "crater-lake",
+    "name": "Crater Lake"
+  },
+  {
+    "slug": "mount-desert-island",
+    "name": "Mount Desert Island"
+  },
+  {
+    "slug": "south-beach",
+    "name": "South Beach"
+  },
+  {
+    "slug": "beverly-hills",
+    "name": "Beverly Hills"
+  },
+  {
+    "slug": "hollywood",
+    "name": "Hollywood"
+  },
+  {
+    "slug": "venice-beach",
+    "name": "Venice Beach"
+  },
+  {
+    "slug": "waikiki",
+    "name": "Waikiki"
+  },
+  {
+    "slug": "french-quarter",
+    "name": "French Quarter"
+  },
+  {
+    "slug": "manhattan-beach",
+    "name": "Manhattan Beach"
+  },
+  {
+    "slug": "hermosa-beach",
+    "name": "Hermosa Beach"
+  },
+  {
+    "slug": "redondo-beach",
+    "name": "Redondo Beach"
+  },
+  {
+    "slug": "coronado",
+    "name": "Coronado"
+  },
+  {
+    "slug": "la-jolla",
+    "name": "La Jolla"
+  },
+  {
+    "slug": "del-mar",
+    "name": "Del Mar"
+  },
+  {
+    "slug": "encinitas",
+    "name": "Encinitas"
+  },
+  {
+    "slug": "carlsbad",
+    "name": "Carlsbad"
   }
 ]

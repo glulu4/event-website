@@ -23,6 +23,9 @@ const ActivityForm = () => {
         additionalDetails: '',
     });
 
+    console.log(formData);
+    
+
     const handleFormSubmit = async () => {
         setIsLoading(true);
 
@@ -34,7 +37,6 @@ const ActivityForm = () => {
         setIsLoading(false);
         console.log("ideas: ", ideas);
         
-        // return;
 
         router.push(`/ideas?data=${jsonIdeas}&formData=${jsonFormData}`);
 

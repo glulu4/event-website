@@ -35,11 +35,12 @@ const OccasionDropdown = ({value, onChange}: OccasionDropdownProps) => {
     return (
         <Field>
             <Label>Select Occasion</Label>
-            <Listbox name="status" defaultValue="active">
+            <Listbox name="status" defaultValue="active" onChange={onChange}>
                 {options.map((option,index) => (
-                    <ListboxOption key={index} value={option.value}>
+                    <ListboxOption key={index} value={option.value} >
                         <ListboxLabel
-                            onClick={() => onChange(option.value)}
+                            
+                            // onClick={() => onChange(option.value)}
                         >{option.label}</ListboxLabel>
                     </ListboxOption>
                 ))}
