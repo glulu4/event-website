@@ -19,7 +19,7 @@ const fontSerif = Inria_Serif({
 export const metadata: Metadata = {
   title: {
     absolute: config.blog.metadata.title.absolute,
-    default: config.blog.metadata.title.default,
+    default: "Things to do | Find fun things to do",
     template: config.blog.metadata.title.template,
   },
   description: config.blog.metadata.description,
